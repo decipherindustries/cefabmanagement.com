@@ -197,10 +197,10 @@ textarea.cc-input{ min-height:120px; resize:vertical; line-height:var(--lh-body)
   mask:linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
 .ck-logos__track{ list-style:none; margin:0; padding:0; display:flex; align-items:center;
   gap:64px; width:max-content; animation:ck-marquee 42s linear infinite; }
-.ck-logos__item{ flex:none; width:128px; height:38px; opacity:.5;
-  background-color:var(--ink-700);
-  -webkit-mask:var(--logo) center / contain no-repeat;
-  mask:var(--logo) center / contain no-repeat; }
+.ck-logos__item{ flex:none; width:128px; height:38px; opacity:.55;
+  background:var(--logo) center / contain no-repeat;
+  filter:grayscale(1); }
+.ck-logos__item--telio{ height:50px; }
 @keyframes ck-marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
 @media (hover:hover){ .ck-logos__viewport:hover .ck-logos__track{ animation-play-state:paused; } }
 @media (prefers-reduced-motion: reduce){

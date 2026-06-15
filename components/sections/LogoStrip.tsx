@@ -2,18 +2,18 @@ import type { CSSProperties } from "react";
 import { Container } from "@/components/layout/Container";
 import type { Dictionary } from "@/content";
 
-// Logos live in /public/logos. Rendered monochrome via CSS mask, so the
-// mismatched brand colours unify and white-on-transparent marks (Telio)
-// don't disappear on the light strip. Not client-specific copy → not localised.
-const LOGOS = [
+// Logos live in /public/logos, set as CSS background-images and unified with a
+// grayscale filter + opacity (see components.css). Grayscale — not alpha-masking
+// — so filled marks like Telio (red/grey squares) render correctly rather than
+// collapsing to a solid block. Not client-specific copy → not localised.
+const LOGOS: { src: string; alt: string; mod?: string }[] = [
   { src: "/logos/superyacht-times.svg", alt: "SuperYacht Times" },
   { src: "/logos/yachteye.png", alt: "YachtEye" },
   { src: "/logos/triple-solar.svg", alt: "Triple Solar" },
   { src: "/logos/fleks.png", alt: "Fleks" },
   { src: "/logos/unravel.svg", alt: "Unravel" },
   { src: "/logos/greenflux.svg", alt: "GreenFlux" },
-  // Telio omitted: the available asset is an icon-only mark (two squares, no
-  // wordmark) that masks to meaningless blocks. Re-add with a full-wordmark logo.
+  { src: "/logos/telio.png", alt: "Telio", mod: "telio" },
 ];
 
 export function LogoStrip({ dict }: { dict: Dictionary }) {
@@ -28,7 +28,7 @@ export function LogoStrip({ dict }: { dict: Dictionary }) {
             {track.map((logo, i) => (
               <li
                 key={`${logo.alt}-${i}`}
-                className="ck-logos__item"
+                className={`ck-logos__item${logo.mod ? ` ck-logos__item--${logo.mod}` : ""}`}
                 style={{ "--logo": `url(${logo.src})` } as CSSProperties}
                 role="img"
                 aria-label={logo.alt}
