@@ -3,10 +3,16 @@ export interface Dictionary {
   hero: { badge: string; title: string; lead: string; cta: string; cta2: string };
   problems: { title: string; subtitle: string; items: string[] }; // 12
   why: { title: string; subtitle: string; cards: { title: string; body: string }[] }; // 4
-  services: { title: string; subtitle: string; cards: { title: string; body: string }[] }; // 4
+  clients: { title: string };
+  services: {
+    title: string; subtitle: string;
+    cards: { title: string; body: string }[]; // 4
+    aiLabel: string; aiNote: string;
+  };
   pricing: {
     title: string;
     popularLabel: string;
+    intro: string;
     subtitlePrefix: string; subtitleLink: string; subtitleSuffix: string;
     tiers: { name: string; popular?: boolean; availability: string; forWhom: string; features: string[] }[]; // 3
     project: { name: string; items: string[]; note: string };

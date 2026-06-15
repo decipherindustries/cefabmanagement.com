@@ -186,3 +186,36 @@ textarea.cc-input{ min-height:120px; resize:vertical; line-height:var(--lh-body)
 .cc-checkrow{ display:flex; align-items:center; gap:10px; font-size:var(--text-sm);
   color:var(--text-body); cursor:pointer; }
 .cc-checkrow input{ width:18px; height:18px; accent-color:var(--blue-600); flex:none; }
+
+
+/* ---- logo strip (home, below hero) ---- */
+.ck-logos{ padding:44px 0 8px; }
+.ck-logos__title{ text-align:center; font-size:var(--text-xs); font-weight:var(--fw-semibold);
+  letter-spacing:var(--ls-eyebrow); text-transform:uppercase; color:var(--text-muted); margin:0 0 28px; }
+.ck-logos__viewport{ overflow:hidden;
+  -webkit-mask:linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+  mask:linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent); }
+.ck-logos__track{ list-style:none; margin:0; padding:0; display:flex; align-items:center;
+  gap:64px; width:max-content; animation:ck-marquee 42s linear infinite; }
+.ck-logos__item{ flex:none; width:128px; height:38px; opacity:.5;
+  background-color:var(--ink-700);
+  -webkit-mask:var(--logo) center / contain no-repeat;
+  mask:var(--logo) center / contain no-repeat; }
+@keyframes ck-marquee{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+@media (hover:hover){ .ck-logos__viewport:hover .ck-logos__track{ animation-play-state:paused; } }
+@media (prefers-reduced-motion: reduce){
+  .ck-logos__track{ animation:none; flex-wrap:wrap; justify-content:center; width:auto; gap:40px 56px; }
+  .ck-logos__item[aria-hidden]{ display:none; }
+}
+
+/* ---- AI & automation note (below "What I do" cards) ---- */
+.ck-ainote{ max-width:760px; margin:36px auto 0; background:var(--surface-card);
+  border:1px solid var(--border-default); border-left:3px solid var(--accent);
+  border-radius:var(--radius-lg); padding:24px 28px; box-shadow:var(--shadow-sm); }
+.ck-ainote__eyebrow{ display:inline-block; font-size:var(--text-xs); font-weight:var(--fw-semibold);
+  letter-spacing:var(--ls-eyebrow); text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+.ck-ainote__body{ margin:0; font-size:var(--text-base); line-height:var(--lh-body); color:var(--text-body); }
+
+/* ---- packages: contact note below tiers ---- */
+.ck-pricing__note{ text-align:center; font-size:var(--text-sm); color:var(--text-muted);
+  margin:0 0 36px; }

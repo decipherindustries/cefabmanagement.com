@@ -3,6 +3,7 @@ import { isLocale, type Locale } from "@/lib/routes";
 import { getDictionary } from "@/content";
 import { buildAlternates, canonicalFor } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
+import { LogoStrip } from "@/components/sections/LogoStrip";
 import { SoundFamiliar } from "@/components/sections/SoundFamiliar";
 import { WhyWorkTogether } from "@/components/sections/WhyWorkTogether";
 import { WhatIDo } from "@/components/sections/WhatIDo";
@@ -28,6 +29,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main>
       <Hero locale={locale as Locale} dict={dict} />
+      <LogoStrip dict={dict} />
       <SoundFamiliar dict={dict} />
       <WhyWorkTogether dict={dict} />
       <WhatIDo dict={dict} />

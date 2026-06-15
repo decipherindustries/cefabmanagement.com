@@ -17,6 +17,10 @@ export function WhatIDo({ dict }: { dict: Dictionary }) {
           </FeatureCard>
         ))}
       </div>
+      <div className="ck-ainote">
+        <span className="ck-ainote__eyebrow">{dict.services.aiLabel}</span>
+        <p className="ck-ainote__body">{dict.services.aiNote}</p>
+      </div>
     </Section>
   );
 }

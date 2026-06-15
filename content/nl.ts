@@ -43,11 +43,11 @@ export const nl: Dictionary = {
       },
       {
         title: "Pragmatisch, niet academisch",
-        body: "We tornen niet aan wat werkt. Focus op quick wins én de lange termijn. Geen frameworks om het framework - gewoon doen wat nodig is, met heldere outcomes.",
+        body: "We tornen niet aan wat werkt. Focus op quick wins én de lange termijn — en ik zet AI en automatisering in om het monnikenwerk te slopen, niet om met buzzwords te strooien. Geen frameworks om het framework, gewoon doen wat nodig is met heldere outcomes.",
       },
       {
         title: "Bewezen track-record",
-        body: "10+ jaar CFO/COO in scale-ups (€5-100M, tot 150 FTE). M&A, funding rounds, exits tot €80M, operational turnarounds — ik heb de film al vaker gezien, inclusief die van de volgende fase.",
+        body: "10+ jaar CFO/COO in scale-ups (€5-100M, tot 150 FTE). Echte resultaten: een exit van €60-80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien — inclusief die van de volgende fase.",
       },
       {
         title: "CFO + COO Combinatie",
@@ -55,32 +55,40 @@ export const nl: Dictionary = {
       },
     ],
   },
+  clients: {
+    title: "Bedrijven die ik heb helpen bouwen en schalen",
+  },
   services: {
     title: "Wat ik doe",
     subtitle:
-      "Hands-on ondersteuning op het snijvlak van finance en operations",
+      "Het hands-on, vaak onzichtbare werk op het snijvlak van finance en operations dat een bedrijf makkelijk te runnen, te financieren en te verkopen maakt.",
     cards: [
       {
-        title: "Financial Management",
-        body: "Budgettering, forecasting, cashflow management, KPI dashboards, en financiële rapportages die helpen bij beslissingen",
+        title: "Cijfers die je kunt vertrouwen",
+        body: "Een herhaalbare maandafsluiting, schone boeken, en dashboards die beslissingen sturen in plaats van verwarren. Je weet altijd je winst — tot op deal-niveau.",
       },
       {
-        title: "Operational Excellence",
-        body: "Procesoptimalisatie, systeem implementaties, team structurering, en het opzetten van scalable operations",
+        title: "Cash die je ziet aankomen",
+        body: "Een rollende liquiditeitsprognose, zodat cash geen verrassing meer is. Helder zicht op runway, dividend, hires en de investeringen die je overweegt.",
       },
       {
-        title: "Strategic Planning",
-        body: "Scenario planning, business cases, investment evaluaties, en strategische beslissingsondersteuning",
+        title: "Operations die meeschalen",
+        body: "Processen, systemen en teamstructuur die niet meer van jou afhankelijk zijn — gebouwd in je eigen tools, met je eigen mensen, en geautomatiseerd waar het loont.",
       },
       {
-        title: "Due Diligence Ready",
-        body: "Voorbereiding op exit, investering, overname of lening. Data room opzetten, financiële modellen, en investor ready worden",
+        title: "Klaar als het telt",
+        body: "Investor-, koper- en due-diligence-ready: een schone data room, solide financiële modellen, en cijfers die standhouden als er een deal of audit op het spel staat.",
       },
     ],
+    aiLabel: "AI & automatisering",
+    aiNote:
+      "Slimmer, niet alleen harder. Waar het helpt, breng ik AI en automatisering de finance-functie in — de maandafsluiting, rapportage en forecasting automatiseren — zodat het routinewerk sneller en met minder fouten draait, en jouw senior tijd naar de beslissingen gaat die het bedrijf echt verder brengen. Het is hóe ik werk, niet het hele verhaal.",
   },
   pricing: {
     title: "Packages",
     popularLabel: "Populair",
+    intro:
+      "De packages sluiten aan op waar je bedrijf nú staat — geen vast menu. De meeste samenwerkingen starten bij Foundation om de basis op orde te krijgen, en groeien daarna mee naar Growth en Strategic naarmate het bedrijf (en wat het nodig heeft van een CFO/COO) opschaalt. Je zit nergens aan vast: we toetsen elk kwartaal of de tier nog past en schalen op of af waar nodig.",
     subtitlePrefix: "Neem ",
     subtitleLink: "contact",
     subtitleSuffix: " op voor meer informatie",
@@ -88,7 +96,7 @@ export const nl: Dictionary = {
       {
         name: "Foundation",
         availability: "~2 dagen per maand beschikbaarheid (flexibel in te plannen)",
-        forWhom: "Voor wie: Je hebt basis op orde, wil structuur en inzicht",
+        forWhom: "Voor wie: Je groeit hard, maar de financiële basis is achtergebleven — je wilt schone cijfers en structuur",
         features: [
           "Financial dashboards & KPI's opzetten",
           "Basis FP&A (budget, forecast, actuals)",
@@ -166,7 +174,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Werk je alleen of met een team?",
-        a: "Primair werk ik zelfstandig binnen jouw organisatie. Voor gespecialiseerde vraagstukken (bijv. internationale tax structuur, complexe M&A) werk ik samen met een netwerk van experts. Dit voorkom ik dat je voor alles een eigen team moet opbouwen.",
+        a: "Primair werk ik zelfstandig binnen jouw organisatie. Voor gespecialiseerde vraagstukken (bijv. internationale tax structuur, complexe M&A) werk ik samen met een netwerk van experts. Zo voorkom ik dat je voor alles een eigen team moet opbouwen.",
       },
       {
         q: "Voor wie is dit NIET geschikt?",
@@ -205,17 +213,17 @@ export const nl: Dictionary = {
   about: {
     title: "Over Catherine",
     intro: "10+ jaar ervaring als CFO en COO in snelgroeiende scale-ups",
-    bio: "Catherine Cruickshank heeft meer dan een decennium ervaring in het opbouwen en optimaliseren van finance en operations in scale-ups van €5M tot €100M omzet. Ze heeft bedrijven begeleid door funding rounds, M&A trajecten, en exits tot €80M, en weet uit ervaring wat er nodig is om van klein naar groot te groeien.\n\nZe combineert strategisch inzicht met een praktische, hands-on aanpak. Geen rapporten die op een plank blijven liggen, maar concrete implementaties die direct impact hebben op de organisatie.",
+    bio: "Catherine Cruickshank heeft meer dan een decennium ervaring in het opbouwen en optimaliseren van finance en operations in scale-ups van €5M tot €100M omzet. Ze heeft bedrijven begeleid door funding rounds, M&A trajecten, en exits tot €80M, en weet uit ervaring wat er nodig is om van klein naar groot te groeien.\n\nZe combineert strategisch inzicht met een praktische, hands-on aanpak. Geen rapporten die op een plank blijven liggen, maar concrete implementaties die direct impact hebben op de organisatie. Steeds vaker betekent dat AI en automatisering de finance-functie in brengen — het repetitieve werk automatiseren zodat het team zijn tijd aan beslissingen besteedt, niet aan data-invoer.",
     linkedin: "Bekijk LinkedIn profiel",
     cv: "Download CV",
     stats: [
-      { value: "10+", label: "Jaar executive management ervaring" },
-      { value: "€5–100M", label: "Omzetbereik" },
+      { value: "10+", label: "Jaar CFO/COO in scale-ups" },
+      { value: "20+", label: "Groepsentiteiten geconsolideerd" },
       { value: "€80M", label: "Grootste exit" },
       { value: "10–150", label: "FTE aangestuurd" },
     ],
     quote1: "Buiten werk, houd ik van reizen naar de zon en skiën.",
-    quote2: "Ik heb ervaring Nederland, Duitsland en Engeland.",
+    quote2: "Ik heb ervaring in Nederland, Duitsland en Engeland.",
   },
   contact: {
     title: "Laten we kennismaken",
