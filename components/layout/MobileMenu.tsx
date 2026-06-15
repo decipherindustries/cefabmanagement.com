@@ -10,7 +10,7 @@ export function MobileMenu({
   nav,
 }: {
   locale: Locale;
-  nav: { home: string; about: string; contact: string };
+  nav: { home: string; about: string; contact: string; faq: string };
 }) {
   const [open, setOpen] = useState(false);
   return (
@@ -30,6 +30,9 @@ export function MobileMenu({
           </Link>
           <Link href={href("about", locale)} onClick={() => setOpen(false)}>
             {nav.about}
+          </Link>
+          <Link href={href("faq", locale)} onClick={() => setOpen(false)}>
+            {nav.faq}
           </Link>
           <Link href={href("contact", locale)} onClick={() => setOpen(false)}>
             {nav.contact}
