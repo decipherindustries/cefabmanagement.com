@@ -12,7 +12,7 @@ export const nl: Dictionary = {
     title: "Business partner voor scale-ups die klaar zijn voor de volgende fase",
     lead: "Ik help ambitieuze ondernemers die weten wat ze doen maar tegen de limieten van hun systemen aanlopen. Niet met rapporten en adviezen, maar door hands-on mee te bouwen aan de finance, operations en processen die nodig zijn om 5-10x (of meer) te groeien.",
     cta: "Plan een gesprek",
-    cta2: "Meer informatie",
+    cta2: "Meer over Catherine",
   },
   problems: {
     title: "Herken je dit?",

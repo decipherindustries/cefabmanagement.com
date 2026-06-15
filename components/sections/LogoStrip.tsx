@@ -26,9 +26,9 @@ export function LogoStrip({ dict, tail = false }: { dict: Dictionary; tail?: boo
       <Container>
         <p className="ck-logos__title">{dict.clients.title}</p>
         <div className="ck-logos__viewport">
-          <ul className="ck-logos__track">
+          <div className="ck-logos__track">
             {track.map((logo, i) => (
-              <li
+              <span
                 key={`${logo.alt}-${i}`}
                 className={`ck-logos__item${logo.mod ? ` ck-logos__item--${logo.mod}` : ""}`}
                 style={{ "--logo": `url(${logo.src})` } as CSSProperties}
@@ -37,7 +37,7 @@ export function LogoStrip({ dict, tail = false }: { dict: Dictionary; tail?: boo
                 aria-hidden={i >= LOGOS.length || undefined}
               />
             ))}
-          </ul>
+          </div>
         </div>
       </Container>
     </section>

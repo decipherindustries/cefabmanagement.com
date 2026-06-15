@@ -28,7 +28,7 @@ export function Hero({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </div>
           </div>
           <div className="ck-hero__media">
-            <Image src={portrait} alt="Catherine Cruickshank" priority placeholder="blur" sizes="(max-width: 980px) 90vw, 460px" />
+            <Image src={portrait} alt="Catherine Cruickshank" priority fetchPriority="high" placeholder="blur" sizes="(max-width: 980px) 90vw, 460px" />
           </div>
         </Container>
       </section>

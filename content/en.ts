@@ -12,7 +12,7 @@ export const en: Dictionary = {
     title: "Business partner for scale-ups ready for the next phase",
     lead: "I help ambitious entrepreneurs who know what they're doing but are hitting the limits of their systems. Not with reports and advice, but by hands-on building the finance, operations and processes needed to grow 5-10x (or more).",
     cta: "Schedule a call",
-    cta2: "Learn more",
+    cta2: "Learn more about Catherine",
   },
   problems: {
     title: "Sound familiar?",
