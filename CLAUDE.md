@@ -1,4 +1,4 @@
-# CLAUDE.md — cefabmanagement.com
+# CLAUDE.md - cefabmanagement.com
 
 Project rules for this codebase. Read alongside the README.
 
@@ -14,10 +14,10 @@ Project rules for this codebase. Read alongside the README.
 ## Where things live
 
 - **Content / copy** → `content/en.ts` + `content/nl.ts` (typed `Dictionary`). Keep the
-  two locales structurally identical — `content/dictionary.test.ts` enforces parity.
+  two locales structurally identical - `content/dictionary.test.ts` enforces parity.
 - **Design tokens / CSS** → `app/styles/` (`tokens.css`, `components.css`,
   `layout.css`); Tailwind theme mapping in `app/globals.css`. Do **not** edit
-  `../design-reference/` — it's the read-only source-of-truth export the styles were
+  `../design-reference/` - it's the read-only source-of-truth export the styles were
   ported from.
 - **Brand / contact constants** → `lib/site.ts`.
 - **Routing** → `lib/routes.ts` (slug map + URL helpers); decision logic in
@@ -31,11 +31,14 @@ Project rules for this codebase. Read alongside the README.
 - Keep `.npmrc`'s `legacy-peer-deps=true` (required for `@vercel/analytics`'s optional
   SvelteKit peer).
 - Don't add AI co-authorship trailers to commits.
+- **Go easy on em-dashes.** Don't use `—` in copy, comments, or docs; prefer a plain
+  hyphen `-` (spaced, ` - `, where a dash is wanted) or restructure the sentence.
+  En-dashes `–` are fine in numeric ranges (e.g. `€5–100M`, `10–150`).
 
 ## Git workflow
 
 - **Work directly on `main`.** This project commits and pushes straight to `main`
-  (also the GitHub default branch) — no feature-branch / `development` flow here.
+  (also the GitHub default branch) - no feature-branch / `development` flow here.
   This overrides the global git-flow branching convention.
 
 ## Before shipping

@@ -44,7 +44,7 @@ export function proxy(req: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next/|api/|.*\\..*).*)", // dotless paths (pages) — locale + Accept negotiation
+    "/((?!_next/|api/|.*\\..*).*)", // dotless paths (pages) - locale + Accept negotiation
     "/((?!_next/|api/).*\\.md)", // explicit .md URLs
   ],
 };

@@ -2,7 +2,7 @@
 
 Bilingual (NL/EN) statically-generated marketing site for **Catherine Cruickshank ·
 Fractional CFO/COO** (CEFAB Management). Built with Next.js 16 (App Router, React 19),
-TypeScript (strict), and Tailwind CSS v4. Every page is pre-rendered (SSG) — there is no
+TypeScript (strict), and Tailwind CSS v4. Every page is pre-rendered (SSG) - there is no
 SSR or runtime data fetching.
 
 ## Scripts
@@ -30,7 +30,7 @@ All user-facing copy lives in two typed dictionaries:
 - `content/nl.ts`
 
 Both implement the `Dictionary` type in `content/types.ts`. **Keep the two locales
-structurally identical** — `content/dictionary.test.ts` enforces parity (same keys,
+structurally identical** - `content/dictionary.test.ts` enforces parity (same keys,
 same array lengths). Edit the string values; don't change the shape of one without the
 other.
 
@@ -41,10 +41,10 @@ LinkedIn). They feed the footer, the About/Contact pages, and the JSON-LD in
 `lib/seo.ts`.
 
 The on-site email is **obfuscated** (assembled in JS via `components/ui/ObfuscatedEmail.tsx`)
-so it isn't in the static HTML or the JSON-LD — to deter scrapers. The contact form and
+so it isn't in the static HTML or the JSON-LD - to deter scrapers. The contact form and
 LinkedIn are the primary channels.
 
-- `cvUrl` is intentionally `null` (no public CV — credentials live on LinkedIn). To add a
+- `cvUrl` is intentionally `null` (no public CV - credentials live on LinkedIn). To add a
   CV later: drop a PDF at `public/cv-catherine-cruickshank.pdf` and set
   `cvUrl: "/cv-catherine-cruickshank.pdf"` in `lib/site.ts` (the "Download CV" button then
   appears on About).
@@ -62,7 +62,7 @@ URLs are locale-prefixed with **localised slugs**:
 - The root `/` redirects to a locale home based on the browser's `Accept-Language`.
 - Requesting an English slug under `/nl` (e.g. `/nl/about`) redirects to the localised
   canonical (`/nl/over-mij`).
-- All of this is handled by `proxy.ts` — Next.js 16 renamed the `middleware` file
+- All of this is handled by `proxy.ts` - Next.js 16 renamed the `middleware` file
   convention to `proxy` (same edge runtime + API). The pure decision logic lives in
   `lib/middleware-logic.ts` (unit-tested); the slug map and URL helpers live in
   `lib/routes.ts`.
@@ -72,11 +72,11 @@ URLs are locale-prefixed with **localised slugs**:
 Ported verbatim (token-driven) from the Claude Design export at the repo's **parent**
 directory (`../design-reference/`, read-only):
 
-- `app/styles/tokens.css` — design tokens (colors, typography, spacing, elevation) as
+- `app/styles/tokens.css` - design tokens (colors, typography, spacing, elevation) as
   CSS variables.
-- `app/styles/components.css` — component CSS (`cc-*`).
-- `app/styles/layout.css` — page/section/responsive CSS (`ck-*`).
-- `app/globals.css` — imports the above and maps the tokens into Tailwind v4's `@theme`
+- `app/styles/components.css` - component CSS (`cc-*`).
+- `app/styles/layout.css` - page/section/responsive CSS (`ck-*`).
+- `app/globals.css` - imports the above and maps the tokens into Tailwind v4's `@theme`
   so utilities resolve to them.
 
 ## Analytics
@@ -97,7 +97,7 @@ Submissions POST to the serverless route `app/api/contact/route.ts`, which:
 
 1. drops anything that trips the hidden **honeypot** field (`company_url`),
 2. re-validates server-side (`lib/contact-validation.ts`),
-3. verifies **Google reCAPTCHA v3** server-side (`lib/recaptcha.ts`) — rejects scores
+3. verifies **Google reCAPTCHA v3** server-side (`lib/recaptcha.ts`) - rejects scores
    below `RECAPTCHA_MIN_SCORE`,
 4. sends a branded email via **Brevo** (`lib/brevo.ts` + `lib/contact-email.ts`):
    **To** `CONTACT_TO_ADDRESS`, **From** `BREVO_FROM_ADDRESS` (`noreply@…`), **Reply-To**
@@ -132,23 +132,23 @@ there is no CV. Browsers are unaffected (they still get HTML).
 ## Deploying (Vercel)
 
 1. Push the repo and import it in Vercel. The framework is auto-detected.
-2. **Root Directory = default** — the repo root *is* the Next app.
+2. **Root Directory = default** - the repo root *is* the Next app.
 3. Set environment variables (see `.env.example`; real values only in Vercel):
-   - `NEXT_PUBLIC_SITE_URL` (e.g. `https://cefabmanagement.com`) — canonical URLs,
+   - `NEXT_PUBLIC_SITE_URL` (e.g. `https://cefabmanagement.com`) - canonical URLs,
      hreflang, sitemap, JSON-LD.
-   - `NEXT_PUBLIC_GA_ID` — optional GA override (a default is baked in).
+   - `NEXT_PUBLIC_GA_ID` - optional GA override (a default is baked in).
    - **Contact form:** `BREVO_API_KEY`, `BREVO_FROM_NAME`, `BREVO_FROM_ADDRESS`,
      `CONTACT_TO_ADDRESS`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `RECAPTCHA_SECRET_KEY`,
      `RECAPTCHA_MIN_SCORE` (optional).
 4. Set the **production branch to `main`** (Settings → Git → Production Branch). Every
    push to it then deploys automatically.
 
-The `proxy` runs on Vercel's edge automatically — no extra configuration needed.
+The `proxy` runs on Vercel's edge automatically - no extra configuration needed.
 
 ## Owner to-dos (later)
 
 - Configure Brevo (verify domain + API key) and reCAPTCHA (register site) in Vercel to
-  make the contact form send — see "Contact form" above.
+  make the contact form send - see "Contact form" above.
 - Replace the portrait with a higher-res original when available
   (`public/portrait-catherine.png`).
 - Swap "Schedule a call" to a real booking URL if desired (currently links to Contact).

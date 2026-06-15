@@ -4,7 +4,7 @@ export const DEFAULT_LOCALE: Locale = "nl";
 
 export type PageKey = "home" | "about" | "contact";
 
-/** Internal (file-route) slug per page — English-based, locale-independent. */
+/** Internal (file-route) slug per page - English-based, locale-independent. */
 const INTERNAL_SLUG: Record<PageKey, string> = {
   home: "",
   about: "about",

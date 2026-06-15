@@ -11,7 +11,7 @@ export async function verifyRecaptcha(
   action = "contact",
 ): Promise<RecaptchaResult> {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
-  // If no secret configured (e.g. local dev), skip — treated as pass.
+  // If no secret configured (e.g. local dev), skip - treated as pass.
   if (!secret) return { ok: true, reason: "recaptcha-disabled" };
   if (!token) return { ok: false, reason: "missing-token" };
 

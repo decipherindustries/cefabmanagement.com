@@ -82,7 +82,7 @@
   --fw-semibold: 600; /* @kind font */
   --fw-bold: 700; /* @kind font */
 
-  /* Display scale (Instrument Serif — set tight, large) */
+  /* Display scale (Instrument Serif - set tight, large) */
   --text-display: 64px;   /* hero h1 */
   --text-h1: 48px;        /* section hero */
   --text-h2: 38px;        /* section title ("Packages") */
@@ -138,7 +138,7 @@
   --section-y: 96px;   /* vertical rhythm between sections */
 }
 
-/* ELEVATION — soft, low-contrast shadows. Cards stay flat with subtle lift. */
+/* ELEVATION - soft, low-contrast shadows. Cards stay flat with subtle lift. */
 :root {
   --shadow-xs: 0 1px 2px rgba(17, 24, 40, 0.04);
   --shadow-sm: 0 1px 3px rgba(17, 24, 40, 0.06), 0 1px 2px rgba(17, 24, 40, 0.04);

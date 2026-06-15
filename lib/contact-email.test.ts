@@ -21,7 +21,7 @@ describe("escapeHtml", () => {
 describe("renderContactEmail", () => {
   it("includes the escaped name, message and a subject with the name", () => {
     const { subject, html, text } = renderContactEmail(base);
-    expect(subject).toBe("New contact enquiry — Jane Doe");
+    expect(subject).toBe("New contact enquiry - Jane Doe");
     expect(html).toContain("Jane Doe");
     expect(html).toContain("Hello there");
     expect(text).toContain("Jane Doe");
@@ -30,7 +30,7 @@ describe("renderContactEmail", () => {
 
   it("strips newlines from the name in the subject", () => {
     const { subject } = renderContactEmail({ ...base, name: "Jane\nDoe" });
-    expect(subject).toBe("New contact enquiry — Jane Doe");
+    expect(subject).toBe("New contact enquiry - Jane Doe");
   });
 
   it("escapes an injected <script> in a field", () => {
@@ -44,7 +44,7 @@ describe("renderContactEmail", () => {
 
   it("renders an em dash for empty interests", () => {
     const { html, text } = renderContactEmail({ ...base, interests: [] });
-    expect(text).toContain("Interests: —");
-    expect(html).toContain("—");
+    expect(text).toContain("Interests: -");
+    expect(html).toContain("-");
   });
 });

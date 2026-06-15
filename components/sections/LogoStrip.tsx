@@ -3,8 +3,8 @@ import { Container } from "@/components/layout/Container";
 import type { Dictionary } from "@/content";
 
 // Logos live in /public/logos, set as CSS background-images and unified with a
-// grayscale filter + opacity (see components.css). Grayscale — not alpha-masking
-// — so filled marks like Telio (red/grey squares) render correctly rather than
+// grayscale filter + opacity (see components.css). Grayscale - not alpha-masking
+// - so filled marks like Telio (red/grey squares) render correctly rather than
 // collapsing to a solid block. Not client-specific copy → not localised.
 const LOGOS: { src: string; alt: string; mod?: string }[] = [
   { src: "/logos/superyacht-times.svg", alt: "SuperYacht Times" },

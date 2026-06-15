@@ -32,9 +32,9 @@ export async function sendContactEmail(
     } catch {
       /* ignore body read errors */
     }
-    // Logged to the server (Vercel) only — never returned to the client.
+    // Logged to the server (Vercel) only - never returned to the client.
     console.error(
-      `[brevo] send failed: ${res.status} ${res.statusText} — from=${payload.sender.email} to=${payload.to[0]?.email} — ${detail}`,
+      `[brevo] send failed: ${res.status} ${res.statusText} - from=${payload.sender.email} to=${payload.to[0]?.email} - ${detail}`,
     );
   }
   return { ok: res.ok, status: res.status };

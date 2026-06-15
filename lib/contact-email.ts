@@ -24,13 +24,13 @@ const SANS =
   "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
 
 function joinInterests(interests: string[]): string {
-  return interests && interests.length ? interests.join(", ") : "—";
+  return interests && interests.length ? interests.join(", ") : "-";
 }
 
 function row(label: string, value: string, isLink = false): string {
   const cell = isLink
     ? `<a href="mailto:${escapeHtml(value)}" style="color:${BLUE};text-decoration:none;">${escapeHtml(value)}</a>`
-    : escapeHtml(value || "—");
+    : escapeHtml(value || "-");
   return `
     <tr>
       <td style="padding:10px 16px 10px 0;vertical-align:top;font-family:${SANS};font-size:13px;font-weight:600;color:${MUTED};white-space:nowrap;">${escapeHtml(label)}</td>
@@ -44,7 +44,7 @@ export function renderContactEmail(values: ContactEmailValues): {
   text: string;
 } {
   const name = (values.name || "").replace(/[\r\n]+/g, " ").trim();
-  const subject = `New contact enquiry — ${name || "(no name)"}`;
+  const subject = `New contact enquiry - ${name || "(no name)"}`;
   const interests = joinInterests(values.interests);
 
   const html = `<!doctype html>
@@ -72,7 +72,7 @@ export function renderContactEmail(values: ContactEmailValues): {
               </table>
               <div style="margin-top:20px;">
                 <p style="margin:0 0 8px;font-family:${SANS};font-size:13px;font-weight:600;color:${MUTED};">Message</p>
-                <div style="font-family:${SANS};font-size:14px;line-height:1.6;color:${INK};white-space:pre-wrap;border:1px solid ${BORDER};border-radius:6px;padding:14px 16px;background:#fafbfc;">${escapeHtml(values.message || "—")}</div>
+                <div style="font-family:${SANS};font-size:14px;line-height:1.6;color:${INK};white-space:pre-wrap;border:1px solid ${BORDER};border-radius:6px;padding:14px 16px;background:#fafbfc;">${escapeHtml(values.message || "-")}</div>
               </div>
             </td>
           </tr>
@@ -91,16 +91,16 @@ export function renderContactEmail(values: ContactEmailValues): {
   const text = [
     "New contact enquiry",
     "",
-    `Name:      ${values.name || "—"}`,
-    `Email:     ${values.email || "—"}`,
-    `Phone:     ${values.phone || "—"}`,
-    `Company:   ${values.company || "—"}`,
+    `Name:      ${values.name || "-"}`,
+    `Email:     ${values.email || "-"}`,
+    `Phone:     ${values.phone || "-"}`,
+    `Company:   ${values.company || "-"}`,
     `Interests: ${interests}`,
     "",
     "Message:",
-    values.message || "—",
+    values.message || "-",
     "",
-    "—",
+    "-",
     "Sent from the cefabmanagement.com contact form.",
   ].join("\n");
 

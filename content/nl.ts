@@ -43,11 +43,11 @@ export const nl: Dictionary = {
       },
       {
         title: "Pragmatisch, niet academisch",
-        body: "We tornen niet aan wat werkt. Focus op quick wins én de lange termijn — en ik zet AI en automatisering in om het monnikenwerk te slopen, niet om met buzzwords te strooien. Geen frameworks om het framework, gewoon doen wat nodig is met heldere outcomes.",
+        body: "We tornen niet aan wat werkt. Focus op quick wins én de lange termijn - en ik zet AI en automatisering in om het monnikenwerk te slopen, niet om met buzzwords te strooien. Geen frameworks om het framework, gewoon doen wat nodig is met heldere outcomes.",
       },
       {
         title: "Bewezen track-record",
-        body: "10+ jaar CFO/COO in scale-ups (€5-100M, tot 150 FTE). Echte resultaten: een exit van €60-80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien — inclusief die van de volgende fase.",
+        body: "10+ jaar CFO/COO in scale-ups (€5-100M, tot 150 FTE). Echte resultaten: een exit van €60-80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien - inclusief die van de volgende fase.",
       },
       {
         title: "CFO + COO Combinatie",
@@ -65,7 +65,7 @@ export const nl: Dictionary = {
     cards: [
       {
         title: "Cijfers die je kunt vertrouwen",
-        body: "Een herhaalbare maandafsluiting, schone boeken, en dashboards die beslissingen sturen in plaats van verwarren. Je weet altijd je winst — tot op deal-niveau.",
+        body: "Een herhaalbare maandafsluiting, schone boeken, en dashboards die beslissingen sturen in plaats van verwarren. Je weet altijd je winst - tot op deal-niveau.",
       },
       {
         title: "Cash die je ziet aankomen",
@@ -73,7 +73,7 @@ export const nl: Dictionary = {
       },
       {
         title: "Operations die meeschalen",
-        body: "Processen, systemen en teamstructuur die niet meer van jou afhankelijk zijn — gebouwd in je eigen tools, met je eigen mensen, en geautomatiseerd waar het loont.",
+        body: "Processen, systemen en teamstructuur die niet meer van jou afhankelijk zijn - gebouwd in je eigen tools, met je eigen mensen, en geautomatiseerd waar het loont.",
       },
       {
         title: "Klaar als het telt",
@@ -82,13 +82,13 @@ export const nl: Dictionary = {
     ],
     aiLabel: "AI & automatisering",
     aiNote:
-      "Slimmer, niet alleen harder. Waar het helpt, breng ik AI en automatisering de finance-functie in — de maandafsluiting, rapportage en forecasting automatiseren — zodat het routinewerk sneller en met minder fouten draait, en jouw senior tijd naar de beslissingen gaat die het bedrijf echt verder brengen. Het is hóe ik werk, niet het hele verhaal.",
+      "Slimmer, niet alleen harder. Waar het helpt, breng ik AI en automatisering de finance-functie in - de maandafsluiting, rapportage en forecasting automatiseren - zodat het routinewerk sneller en met minder fouten draait, en jouw senior tijd naar de beslissingen gaat die het bedrijf echt verder brengen. Het is hóe ik werk, niet het hele verhaal.",
   },
   pricing: {
     title: "Packages",
     popularLabel: "Populair",
     intro:
-      "De packages sluiten aan op waar je bedrijf nú staat — geen vast menu. De meeste samenwerkingen starten bij Foundation om de basis op orde te krijgen, en groeien daarna mee naar Growth en Strategic naarmate het bedrijf (en wat het nodig heeft van een CFO/COO) opschaalt. Je zit nergens aan vast: we toetsen elk kwartaal of de tier nog past en schalen op of af waar nodig.",
+      "De packages sluiten aan op waar je bedrijf nú staat - geen vast menu. De meeste samenwerkingen starten bij Foundation om de basis op orde te krijgen, en groeien daarna mee naar Growth en Strategic naarmate het bedrijf (en wat het nodig heeft van een CFO/COO) opschaalt. Je zit nergens aan vast: we toetsen elk kwartaal of de tier nog past en schalen op of af waar nodig.",
     subtitlePrefix: "Neem ",
     subtitleLink: "contact",
     subtitleSuffix: " op voor meer informatie",
@@ -96,7 +96,7 @@ export const nl: Dictionary = {
       {
         name: "Foundation",
         availability: "~2 dagen per maand beschikbaarheid (flexibel in te plannen)",
-        forWhom: "Voor wie: Je groeit hard, maar de financiële basis is achtergebleven — je wilt schone cijfers en structuur",
+        forWhom: "Voor wie: Je groeit hard, maar de financiële basis is achtergebleven - je wilt schone cijfers en structuur",
         features: [
           "Financial dashboards & KPI's opzetten",
           "Basis FP&A (budget, forecast, actuals)",
@@ -213,7 +213,7 @@ export const nl: Dictionary = {
   about: {
     title: "Over Catherine",
     intro: "10+ jaar ervaring als CFO en COO in snelgroeiende scale-ups",
-    bio: "Catherine Cruickshank heeft meer dan een decennium ervaring in het opbouwen en optimaliseren van finance en operations in scale-ups van €5M tot €100M omzet. Ze heeft bedrijven begeleid door funding rounds, M&A trajecten, en exits tot €80M, en weet uit ervaring wat er nodig is om van klein naar groot te groeien.\n\nZe combineert strategisch inzicht met een praktische, hands-on aanpak. Geen rapporten die op een plank blijven liggen, maar concrete implementaties die direct impact hebben op de organisatie. Steeds vaker betekent dat AI en automatisering de finance-functie in brengen — het repetitieve werk automatiseren zodat het team zijn tijd aan beslissingen besteedt, niet aan data-invoer.",
+    bio: "Catherine Cruickshank heeft meer dan een decennium ervaring in het opbouwen en optimaliseren van finance en operations in scale-ups van €5M tot €100M omzet. Ze heeft bedrijven begeleid door funding rounds, M&A trajecten, en exits tot €80M, en weet uit ervaring wat er nodig is om van klein naar groot te groeien.\n\nZe combineert strategisch inzicht met een praktische, hands-on aanpak. Geen rapporten die op een plank blijven liggen, maar concrete implementaties die direct impact hebben op de organisatie. Steeds vaker betekent dat AI en automatisering de finance-functie in brengen - het repetitieve werk automatiseren zodat het team zijn tijd aan beslissingen besteedt, niet aan data-invoer.",
     linkedin: "Bekijk LinkedIn profiel",
     cv: "Download CV",
     stats: [
@@ -258,12 +258,12 @@ export const nl: Dictionary = {
     home: {
       title: "Catherine Cruickshank · Fractional CFO/COO voor scale-ups",
       description:
-        "Hands-on fractional CFO/COO voor ambitieuze scale-ups. Ik bouw de finance, operations en systemen om 5-10x te groeien — operator, geen adviseur.",
+        "Hands-on fractional CFO/COO voor ambitieuze scale-ups. Ik bouw de finance, operations en systemen om 5-10x te groeien - operator, geen adviseur.",
     },
     about: {
       title: "Over Catherine Cruickshank · CFO/COO",
       description:
-        "10+ jaar finance en operations bouwen in scale-ups — M&A, funding rounds en exits tot €80M. Maak kennis met de operator achter CEFAB Management.",
+        "10+ jaar finance en operations bouwen in scale-ups - M&A, funding rounds en exits tot €80M. Maak kennis met de operator achter CEFAB Management.",
     },
     contact: {
       title: "Contact · Catherine Cruickshank CFO/COO",

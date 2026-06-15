@@ -97,7 +97,7 @@ export function ContactForm({ dict }: { dict: Dictionary }) {
             onChange={(e) => set("message", e.target.value)} />
         </Field>
 
-        {/* Honeypot — visually hidden, never shown to real users. */}
+        {/* Honeypot - visually hidden, never shown to real users. */}
         <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }}>
           <label htmlFor="company_url">Company URL</label>
           <input

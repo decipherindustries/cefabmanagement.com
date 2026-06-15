@@ -43,11 +43,11 @@ export const en: Dictionary = {
       },
       {
         title: "Pragmatic, not academic",
-        body: "We don't touch what works. Focus on quick wins and the long term — and I lean on AI and automation to kill the busywork, not to chase buzzwords. No frameworks for frameworks, just what's needed with clear outcomes.",
+        body: "We don't touch what works. Focus on quick wins and the long term - and I lean on AI and automation to kill the busywork, not to chase buzzwords. No frameworks for frameworks, just what's needed with clear outcomes.",
       },
       {
         title: "Proven track record",
-        body: "10+ years CFO/COO in scale-ups (€5-100M, up to 150 FTE). Real outcomes: a €60-80M exit at GreenFlux, EBITDA-positive in 12 months at Fleks, 40% lower overhead at Triple Solar, 60% faster reporting at Telio. I've seen this movie before — including the next phase.",
+        body: "10+ years CFO/COO in scale-ups (€5-100M, up to 150 FTE). Real outcomes: a €60-80M exit at GreenFlux, EBITDA-positive in 12 months at Fleks, 40% lower overhead at Triple Solar, 60% faster reporting at Telio. I've seen this movie before - including the next phase.",
       },
       {
         title: "CFO + COO Combination",
@@ -65,7 +65,7 @@ export const en: Dictionary = {
     cards: [
       {
         title: "Numbers you can trust",
-        body: "A repeatable monthly close, clean books, and dashboards that drive decisions instead of confusing them. You always know your profit — down to deal level.",
+        body: "A repeatable monthly close, clean books, and dashboards that drive decisions instead of confusing them. You always know your profit - down to deal level.",
       },
       {
         title: "Cash you can see coming",
@@ -73,7 +73,7 @@ export const en: Dictionary = {
       },
       {
         title: "Operations that scale",
-        body: "Processes, systems and team structure that stop depending on you — built inside your own tools, with your own people, and automated where it pays off.",
+        body: "Processes, systems and team structure that stop depending on you - built inside your own tools, with your own people, and automated where it pays off.",
       },
       {
         title: "Ready when it counts",
@@ -82,13 +82,13 @@ export const en: Dictionary = {
     ],
     aiLabel: "AI & automation",
     aiNote:
-      "Smarter, not just harder. Where it helps, I bring AI and automation into the finance function — automating the monthly close, reporting and forecasting — so the routine work runs faster and with fewer errors, and your senior time goes to the decisions that actually move the business. It's how I work, not the whole story.",
+      "Smarter, not just harder. Where it helps, I bring AI and automation into the finance function - automating the monthly close, reporting and forecasting - so the routine work runs faster and with fewer errors, and your senior time goes to the decisions that actually move the business. It's how I work, not the whole story.",
   },
   pricing: {
     title: "Packages",
     popularLabel: "Popular",
     intro:
-      "The packages map to where your company is right now — not to a fixed menu. Most partnerships start at Foundation to get the basics solid, then grow into Growth and Strategic as the business (and what it needs from a CFO/COO) scales. You're never locked in: we review the fit every quarter and move up or down as needed.",
+      "The packages map to where your company is right now - not to a fixed menu. Most partnerships start at Foundation to get the basics solid, then grow into Growth and Strategic as the business (and what it needs from a CFO/COO) scales. You're never locked in: we review the fit every quarter and move up or down as needed.",
     subtitlePrefix: "",
     subtitleLink: "Contact",
     subtitleSuffix: " us for more information",
@@ -96,7 +96,7 @@ export const en: Dictionary = {
       {
         name: "Foundation",
         availability: "~2 days per month availability (flexible to schedule)",
-        forWhom: "For whom: You're growing fast, but the financial foundations haven't kept up — you want clean numbers and structure",
+        forWhom: "For whom: You're growing fast, but the financial foundations haven't kept up - you want clean numbers and structure",
         features: [
           "Setting up financial dashboards & KPI's",
           "Basic FP&A (budget, forecast, actuals)",
@@ -213,7 +213,7 @@ export const en: Dictionary = {
   about: {
     title: "About Catherine",
     intro: "10+ years experience as CFO and COO in fast-growing scale-ups",
-    bio: "Catherine Cruickshank has over a decade of experience building and optimizing finance and operations in scale-ups from €5M to €100M revenue. She has guided companies through funding rounds, M&A processes, and exits up to €80M, and knows from experience what it takes to grow from small to large.\n\nShe combines strategic insight with a practical, hands-on approach. No reports that end up on a shelf, but concrete implementations that have direct impact on the organization. Increasingly, that means bringing AI and automation into the finance function — automating the repetitive work so the team spends its time on decisions, not data entry.",
+    bio: "Catherine Cruickshank has over a decade of experience building and optimizing finance and operations in scale-ups from €5M to €100M revenue. She has guided companies through funding rounds, M&A processes, and exits up to €80M, and knows from experience what it takes to grow from small to large.\n\nShe combines strategic insight with a practical, hands-on approach. No reports that end up on a shelf, but concrete implementations that have direct impact on the organization. Increasingly, that means bringing AI and automation into the finance function - automating the repetitive work so the team spends its time on decisions, not data entry.",
     linkedin: "View LinkedIn profile",
     cv: "Download CV",
     stats: [
@@ -257,12 +257,12 @@ export const en: Dictionary = {
     home: {
       title: "Catherine Cruickshank · Fractional CFO/COO for scale-ups",
       description:
-        "Hands-on fractional CFO/COO for ambitious scale-ups. I build the finance, operations and systems you need to grow 5-10x — operator, not advisor.",
+        "Hands-on fractional CFO/COO for ambitious scale-ups. I build the finance, operations and systems you need to grow 5-10x - operator, not advisor.",
     },
     about: {
       title: "About Catherine Cruickshank · CFO/COO",
       description:
-        "10+ years building finance and operations in scale-ups — M&A, funding rounds and exits up to €80M. Meet the operator behind CEFAB Management.",
+        "10+ years building finance and operations in scale-ups - M&A, funding rounds and exits up to €80M. Meet the operator behind CEFAB Management.",
     },
     contact: {
       title: "Contact · Catherine Cruickshank CFO/COO",

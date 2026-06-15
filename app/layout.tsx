@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", images: [OG_IMAGE.url] },
 };
 
-// GA4 Measurement ID (public — ships in client HTML). Overridable via env.
+// GA4 Measurement ID (public - ships in client HTML). Overridable via env.
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-FKVV7HJ6MQ";
 const gaEnabled =
   !!GA_ID &&

@@ -1,5 +1,5 @@
 // Pure markdown renderers derived from the content dictionaries (single source
-// of truth). NO React, NO next/* server-only imports — importable from a route
+// of truth). NO React, NO next/* server-only imports - importable from a route
 // handler / plain Node context.
 import { getDictionary } from "@/content";
 import { SITE } from "@/lib/site";
@@ -23,7 +23,7 @@ function header(pageKey: PageKey, locale: Locale): string {
   const otherUrl = abs(pageKey, otherLocale(locale));
   return [
     `<!-- Markdown version for AI agents. Human version: ${htmlUrl} -->`,
-    `> Markdown rendering of **${SITE.name} · CFO/COO** — ${locale.toUpperCase()}. Human page: ${htmlUrl}. Other language: ${otherUrl}.`,
+    `> Markdown rendering of **${SITE.name} · CFO/COO** - ${locale.toUpperCase()}. Human page: ${htmlUrl}. Other language: ${otherUrl}.`,
   ].join("\n");
 }
 
@@ -132,7 +132,7 @@ function renderAbout(locale: Locale): string {
 
   out.push(`## Track record`);
   out.push("");
-  for (const stat of d.about.stats) out.push(`- **${stat.value}** — ${stat.label}`);
+  for (const stat of d.about.stats) out.push(`- **${stat.value}** - ${stat.label}`);
   out.push("");
 
   out.push(d.about.quote1);
@@ -160,7 +160,7 @@ function renderContact(locale: Locale): string {
 
   out.push(`## How to get in touch`);
   out.push("");
-  out.push(`The best way to reach ${SITE.name} is via LinkedIn — send a message there:`);
+  out.push(`The best way to reach ${SITE.name} is via LinkedIn - send a message there:`);
   out.push("");
   out.push(`- **LinkedIn:** ${LINKEDIN}`);
   out.push("");
