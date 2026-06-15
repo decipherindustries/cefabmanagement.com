@@ -7,6 +7,5 @@ export const SITE = {
   phoneDisplay: "+31 6 1135 7737",
   phoneHref: "+31611357737",
   linkedin: "https://www.linkedin.com/in/catherinecruickshank/",
-  // cvUrl: set to "/cv-catherine-cruickshank.pdf" once the PDF is added to /public.
-  cvUrl: null as string | null,
+  cvUrl: "/cv-catherine-cruickshank.pdf" as string | null,
 } as const;
