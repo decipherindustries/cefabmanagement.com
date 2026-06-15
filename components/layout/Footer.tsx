@@ -3,6 +3,7 @@ import { Linkedin, Mail } from "lucide-react";
 import { Container } from "./Container";
 import { href, type Locale } from "@/lib/routes";
 import { SITE } from "@/lib/site";
+import { ObfuscatedEmail } from "@/components/ui/ObfuscatedEmail";
 import type { Dictionary } from "@/content";
 
 export function Footer({ locale, dict, year }: { locale: Locale; dict: Dictionary; year: number }) {
@@ -14,7 +15,7 @@ export function Footer({ locale, dict, year }: { locale: Locale; dict: Dictionar
           <p className="ck-footer__tag">{dict.footer.tagline}</p>
           <div className="ck-footer__social">
             <a href={SITE.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
-            <a href={`mailto:${SITE.email}`} aria-label="Email"><Mail /></a>
+            <ObfuscatedEmail iconOnly><Mail /></ObfuscatedEmail>
           </div>
         </div>
         <div className="ck-footer__col">
@@ -25,7 +26,7 @@ export function Footer({ locale, dict, year }: { locale: Locale; dict: Dictionar
         </div>
         <div className="ck-footer__col">
           <div className="ck-footer__h">{dict.footer.contactHeading}</div>
-          <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          <ObfuscatedEmail />
           <a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a>
         </div>
       </Container>

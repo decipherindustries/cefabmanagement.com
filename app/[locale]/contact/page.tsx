@@ -8,6 +8,7 @@ import { Header } from "@/components/layout/Header";
 import { Section } from "@/components/layout/Section";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { SITE } from "@/lib/site";
+import { ObfuscatedEmail } from "@/components/ui/ObfuscatedEmail";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -37,7 +38,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
       <Section>
         <div className="ck-contact__body">
           <div className="ck-contact__info">
-            <div className="ck-contact__row"><Mail /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></div>
+            <div className="ck-contact__row"><Mail /><ObfuscatedEmail /></div>
             <div className="ck-contact__row"><Phone /><a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a></div>
             <div className="ck-contact__row"><Linkedin /><a href={SITE.linkedin} target="_blank" rel="noopener noreferrer">{dict.about.linkedin}</a></div>
           </div>

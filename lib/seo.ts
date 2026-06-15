@@ -26,7 +26,6 @@ export function personJsonLd() {
         "@type": "Person",
         name: SITE.name,
         jobTitle: "Fractional CFO/COO",
-        email: `mailto:${SITE.email}`,
         telephone: `+${SITE.phoneHref.replace(/^\+/, "")}`,
         url: SITE_URL,
         worksFor: { "@type": "Organization", name: SITE.legalName },
@@ -37,7 +36,6 @@ export function personJsonLd() {
         name: SITE.legalName,
         description:
           "Hands-on fractional CFO/COO for ambitious scale-ups in the Netherlands, Germany and the UK.",
-        email: `mailto:${SITE.email}`,
         telephone: `+${SITE.phoneHref.replace(/^\+/, "")}`,
         url: SITE_URL,
         areaServed: ["NL", "DE", "GB"],
