@@ -10,6 +10,16 @@ const config = [
   {
     ignores: [".next/**", "node_modules/**", "out/**", "coverage/**"],
   },
+  {
+    // Allow intentionally-unused identifiers prefixed with `_`
+    // (e.g. the `submitContact(_values)` backend seam).
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_", caughtErrorsIgnorePattern: "^_" },
+      ],
+    },
+  },
 ];
 
 export default config;
