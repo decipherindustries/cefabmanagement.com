@@ -19,6 +19,7 @@
   font-weight:var(--fw-semibold); color:var(--text-heading);
   transition:color var(--dur-base) var(--ease-out); }
 .cc-faq__btn:hover{ color:var(--blue-600); }
+.cc-faq__btn:focus-visible{ outline:none; box-shadow:0 0 0 3px var(--focus-ring); border-radius:var(--radius-sm); }
 .cc-faq__chev{ flex:none; display:inline-flex; color:var(--text-muted);
   transition:transform var(--dur-base) var(--ease-out); }
 .cc-faq__chev svg{ width:20px; height:20px; display:block; }

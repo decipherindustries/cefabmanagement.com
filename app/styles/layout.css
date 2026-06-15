@@ -153,3 +153,14 @@
 .ck-contact__row a:hover{ color:var(--blue-600); }
 .ck-contact__row svg{ width:20px; height:20px; color:var(--blue-600); flex:none; }
 @media (max-width: 980px){ .ck-contact__body{ grid-template-columns:1fr; gap:32px; } }
+
+.ck-nav__link:focus-visible,
+.ck-lang:focus-visible,
+.ck-mobile__btn:focus-visible,
+.ck-footer__col a:focus-visible,
+.ck-footer__social a:focus-visible,
+.ck-contact__row a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--focus-ring);
+  border-radius: var(--radius-sm);
+}

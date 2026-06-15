@@ -13,7 +13,7 @@ export function Footer({ locale, dict, year }: { locale: Locale; dict: Dictionar
           <div className="ck-logo ck-logo--footer">{SITE.name}</div>
           <p className="ck-footer__tag">{dict.footer.tagline}</p>
           <div className="ck-footer__social">
-            <a href={SITE.linkedin} aria-label="LinkedIn"><Linkedin /></a>
+            <a href={SITE.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><Linkedin /></a>
             <a href={`mailto:${SITE.email}`} aria-label="Email"><Mail /></a>
           </div>
         </div>

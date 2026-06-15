@@ -42,7 +42,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <span className="ck-about__quote">{dict.about.quote2}</span>
             </div>
             <div className="ck-about__cta">
-              <Button variant="primary" href={SITE.linkedin} iconRight={<Linkedin />}>{dict.about.linkedin}</Button>
+              <Button variant="primary" href={SITE.linkedin} target="_blank" rel="noopener noreferrer" iconRight={<Linkedin />}>{dict.about.linkedin}</Button>
               {SITE.cvUrl && <Button variant="outline" href={SITE.cvUrl}>{dict.about.cv}</Button>}
             </div>
           </div>

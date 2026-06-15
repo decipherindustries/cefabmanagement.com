@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 
 // GA4 Measurement ID (public — ships in client HTML). Overridable via env.
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-FKVV7HJ6MQ";
+const gaEnabled =
+  !!GA_ID &&
+  process.env.NODE_ENV === "production" &&
+  process.env.VERCEL_ENV !== "preview";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -21,7 +25,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Analytics />
-        {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
+        {gaEnabled ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>
   );

@@ -34,12 +34,12 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           </Container>
         </section>
       </div>
-      <Section label={dict.contact.title}>
+      <Section>
         <div className="ck-contact__body">
           <div className="ck-contact__info">
             <div className="ck-contact__row"><Mail /><a href={`mailto:${SITE.email}`}>{SITE.email}</a></div>
             <div className="ck-contact__row"><Phone /><a href={`tel:${SITE.phoneHref}`}>{SITE.phoneDisplay}</a></div>
-            <div className="ck-contact__row"><Linkedin /><a href={SITE.linkedin}>{dict.about.linkedin}</a></div>
+            <div className="ck-contact__row"><Linkedin /><a href={SITE.linkedin} target="_blank" rel="noopener noreferrer">{dict.about.linkedin}</a></div>
           </div>
           <ContactForm dict={dict} />
         </div>

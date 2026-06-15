@@ -19,7 +19,7 @@ export function FAQItem({ question, children, defaultOpen = false }: {
         <span>{question}</span>
         <span className="cc-faq__chev"><ChevronDown /></span>
       </button>
-      <div className="cc-faq__panel" id={panelId} style={{ maxHeight: maxH }}>
+      <div className="cc-faq__panel" id={panelId} aria-hidden={!open} style={{ maxHeight: maxH }}>
         <div className="cc-faq__inner" ref={inner}>{children}</div>
       </div>
     </div>
