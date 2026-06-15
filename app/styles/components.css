@@ -182,3 +182,6 @@
 .cc-input:focus{ outline:none; border-color:var(--blue-600); box-shadow:0 0 0 3px var(--focus-ring); }
 .cc-input[aria-invalid="true"]{ border-color:var(--red-600); }
 textarea.cc-input{ min-height:120px; resize:vertical; line-height:var(--lh-body); }
+.cc-checkrow{ display:flex; align-items:center; gap:10px; font-size:var(--text-sm);
+  color:var(--text-body); cursor:pointer; }
+.cc-checkrow input{ width:18px; height:18px; accent-color:var(--blue-600); flex:none; }
