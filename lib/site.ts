@@ -7,5 +7,8 @@ export const SITE = {
   phoneDisplay: "+31 6 1135 7737",
   phoneHref: "+31611357737",
   linkedin: "https://www.linkedin.com/in/catherinecruickshank/",
-  cvUrl: "/cv-catherine-cruickshank.pdf" as string | null,
+  // No public CV: credentials live on LinkedIn (the current CV is a job-search
+  // document with a personal email and off-brand framing). The About page hides
+  // the CV button while this is null.
+  cvUrl: null as string | null,
 } as const;
