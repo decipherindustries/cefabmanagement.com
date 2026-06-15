@@ -7,6 +7,7 @@ import { SoundFamiliar } from "@/components/sections/SoundFamiliar";
 import { WhyWorkTogether } from "@/components/sections/WhyWorkTogether";
 import { WhatIDo } from "@/components/sections/WhatIDo";
 import { Packages } from "@/components/sections/Packages";
+import { Faq } from "@/components/sections/Faq";
 import { Connect } from "@/components/sections/Connect";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -31,6 +32,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <WhyWorkTogether dict={dict} />
       <WhatIDo dict={dict} />
       <Packages locale={locale as Locale} dict={dict} />
+      <Faq dict={dict} />
       <Connect locale={locale as Locale} dict={dict} />
     </main>
   );
