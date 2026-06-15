@@ -25,5 +25,17 @@ export async function sendContactEmail(
     headers: { "api-key": apiKey, "Content-Type": "application/json", accept: "application/json" },
     body: JSON.stringify(payload),
   });
+  if (!res.ok) {
+    let detail = "";
+    try {
+      detail = await res.text();
+    } catch {
+      /* ignore body read errors */
+    }
+    // Logged to the server (Vercel) only — never returned to the client.
+    console.error(
+      `[brevo] send failed: ${res.status} ${res.statusText} — from=${payload.sender.email} to=${payload.to[0]?.email} — ${detail}`,
+    );
+  }
   return { ok: res.ok, status: res.status };
 }
