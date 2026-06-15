@@ -38,10 +38,13 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
           <div className="ck-about__bio">
             {paras.map((p, i) => <p key={i}>{p}</p>)}
-            <div className="ck-about__quotes">
-              <span className="ck-about__quote">{dict.about.quote1}</span>
-              <span className="ck-about__quote">{dict.about.quote2}</span>
-            </div>
+            <figure className="ck-testimonial">
+              <blockquote className="ck-testimonial__quote">{dict.about.testimonial.quote}</blockquote>
+              <figcaption className="ck-testimonial__cite">
+                <span className="ck-testimonial__author">{dict.about.testimonial.author}</span>
+                <span className="ck-testimonial__role">{dict.about.testimonial.role}</span>
+              </figcaption>
+            </figure>
             <div className="ck-about__cta">
               <Button variant="primary" href={SITE.linkedin} target="_blank" rel="noopener noreferrer" iconRight={<Linkedin />}>{dict.about.linkedin}</Button>
               {SITE.cvUrl && <Button variant="outline" href={SITE.cvUrl}>{dict.about.cv}</Button>}
@@ -51,7 +54,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <StatStrip dict={dict} />
       </Section>
       <Connect locale={locale as Locale} dict={dict} />
-      <LogoStrip dict={dict} />
+      <LogoStrip dict={dict} tail />
     </main>
   );
 }

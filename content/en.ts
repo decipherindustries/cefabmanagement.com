@@ -222,8 +222,11 @@ export const en: Dictionary = {
       { value: "€80M", label: "Largest exit" },
       { value: "10–150", label: "FTE managed" },
     ],
-    quote1: "Outside of work, I love traveling to sunny destinations and skiing.",
-    quote2: "I have experience in the Netherlands, Germany, and England.",
+    testimonial: {
+      quote: "Catherine turned our finances from a worry into a strength. She doesn't hand you a report and walk away - she gets into the systems, fixes what's broken, and gives you numbers you can actually run the business on. It's like having a CFO who has seen it all before, without the full-time overhead.",
+      author: "Founder & CEO",
+      role: "~€10M media & technology scale-up",
+    },
   },
   contact: {
     title: "Let's connect",

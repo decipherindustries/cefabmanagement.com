@@ -135,9 +135,9 @@ function renderAbout(locale: Locale): string {
   for (const stat of d.about.stats) out.push(`- **${stat.value}** - ${stat.label}`);
   out.push("");
 
-  out.push(d.about.quote1);
-  out.push("");
-  out.push(d.about.quote2);
+  out.push(`> ${d.about.testimonial.quote}`);
+  out.push(">");
+  out.push(`> ${d.about.testimonial.author}, ${d.about.testimonial.role}`);
   out.push("");
 
   out.push(connectSection("Connect", ""));

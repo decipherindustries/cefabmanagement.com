@@ -21,7 +21,7 @@ export interface Dictionary {
   about: {
     title: string; intro: string; bio: string; linkedin: string; cv: string;
     stats: { value: string; label: string }[]; // 4
-    quote1: string; quote2: string;
+    testimonial: { quote: string; author: string; role: string };
   };
   contact: {
     title: string; subtitle: string;

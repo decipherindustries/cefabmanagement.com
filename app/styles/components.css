@@ -190,6 +190,7 @@ textarea.cc-input{ min-height:120px; resize:vertical; line-height:var(--lh-body)
 
 /* ---- logo strip (home, below hero) ---- */
 .ck-logos{ padding:44px 0 8px; }
+.ck-logos--tail{ padding-bottom:72px; } /* extra breathing room above the footer */
 .ck-logos__title{ text-align:center; font-size:var(--text-xs); font-weight:var(--fw-semibold);
   letter-spacing:var(--ls-eyebrow); text-transform:uppercase; color:var(--text-muted); margin:0 0 28px; }
 .ck-logos__viewport{ overflow:hidden;

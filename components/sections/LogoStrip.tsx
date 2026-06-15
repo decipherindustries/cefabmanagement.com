@@ -16,11 +16,13 @@ const LOGOS: { src: string; alt: string; mod?: string }[] = [
   { src: "/logos/telio.png", alt: "Telio", mod: "telio" },
 ];
 
-export function LogoStrip({ dict }: { dict: Dictionary }) {
+// `tail` adds bottom spacing for when the strip is the last block before the
+// footer (About / Contact); the home strip sits mid-page and doesn't need it.
+export function LogoStrip({ dict, tail = false }: { dict: Dictionary; tail?: boolean }) {
   // Duplicated once so the CSS marquee can loop seamlessly (-50% = one set).
   const track = [...LOGOS, ...LOGOS];
   return (
-    <section className="ck-logos" aria-label={dict.clients.title}>
+    <section className={`ck-logos${tail ? " ck-logos--tail" : ""}`} aria-label={dict.clients.title}>
       <Container>
         <p className="ck-logos__title">{dict.clients.title}</p>
         <div className="ck-logos__viewport">

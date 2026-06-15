@@ -222,8 +222,11 @@ export const nl: Dictionary = {
       { value: "€80M", label: "Grootste exit" },
       { value: "10–150", label: "FTE aangestuurd" },
     ],
-    quote1: "Buiten werk, houd ik van reizen naar de zon en skiën.",
-    quote2: "Ik heb ervaring in Nederland, Duitsland en Engeland.",
+    testimonial: {
+      quote: "Catherine maakte van onze financiën een sterkte in plaats van een zorg. Ze levert geen rapport af en vertrekt - ze duikt de systemen in, lost op wat kapot is, en geeft je cijfers waar je je bedrijf echt op kunt sturen. Het is alsof je een CFO hebt die het allemaal al eens heeft meegemaakt, zonder de fulltime overhead.",
+      author: "Oprichter & CEO",
+      role: "~€10M media & technology scale-up",
+    },
   },
   contact: {
     title: "Laten we kennismaken",
