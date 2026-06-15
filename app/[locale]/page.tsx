@@ -3,6 +3,7 @@ import { isLocale, type Locale } from "@/lib/routes";
 import { getDictionary } from "@/content";
 import { buildAlternates, canonicalFor } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
+import { SoundFamiliar } from "@/components/sections/SoundFamiliar";
 import { Connect } from "@/components/sections/Connect";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -23,7 +24,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main>
       <Hero locale={locale as Locale} dict={dict} />
-      {/* SoundFamiliar / WhyWorkTogether / WhatIDo / Packages / Faq inserted in Tasks 17–21 */}
+      <SoundFamiliar dict={dict} />
       <Connect locale={locale as Locale} dict={dict} />
     </main>
   );
