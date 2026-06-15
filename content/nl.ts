@@ -5,6 +5,7 @@ export const nl: Dictionary = {
     home: "Home",
     about: "Over Mij",
     contact: "Contact",
+    faq: "FAQ",
   },
   hero: {
     badge: "Fractional CFO/COO",
@@ -147,6 +148,8 @@ export const nl: Dictionary = {
   },
   faq: {
     title: "Veelgestelde vragen",
+    subtitle:
+      "Heldere antwoorden over hoe een fractional CFO/COO-samenwerking met mij werkt - scope, prijs, doorlooptijd, tools, contracten en fit.",
     items: [
       {
         q: "Hoe snel kun je starten?",
@@ -272,6 +275,11 @@ export const nl: Dictionary = {
       title: "Contact · Catherine Cruickshank CFO/COO",
       description:
         "Wil je weten of we een goede match zijn? Plan een vrijblijvend gesprek of stuur een bericht.",
+    },
+    faq: {
+      title: "FAQ · Catherine Cruickshank CFO/COO",
+      description:
+        "Antwoorden op veelgestelde vragen over werken met een fractional CFO/COO - scope, prijs, doorlooptijd, tools, contracten en fit.",
     },
   },
 };

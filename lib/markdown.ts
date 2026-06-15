@@ -171,6 +171,29 @@ function renderContact(locale: Locale): string {
   return finalize(out);
 }
 
+function renderFaq(locale: Locale): string {
+  const d = getDictionary(locale);
+  const out: string[] = [];
+
+  out.push(header("faq", locale));
+  out.push("");
+
+  out.push(`# ${d.faq.title}`);
+  out.push("");
+  out.push(d.faq.subtitle);
+  out.push("");
+
+  for (const item of d.faq.items) {
+    out.push(`## ${item.q}`);
+    out.push(item.a);
+    out.push("");
+  }
+
+  out.push(connectSection(d.connect.title, d.connect.subtitle));
+
+  return finalize(out);
+}
+
 /** Trim trailing whitespace on each line; collapse to end with a single newline. */
 function finalize(lines: string[]): string {
   const body = lines.map((l) => l.replace(/[ \t]+$/g, "")).join("\n");
@@ -185,5 +208,7 @@ export function renderMarkdown(pageKey: PageKey, locale: Locale): string {
       return renderAbout(locale);
     case "contact":
       return renderContact(locale);
+    case "faq":
+      return renderFaq(locale);
   }
 }

@@ -22,6 +22,7 @@ export function Footer({ locale, dict, year }: { locale: Locale; dict: Dictionar
           <div className="ck-footer__h">{dict.footer.linksHeading}</div>
           <Link href={href("home", locale)}>{dict.nav.home}</Link>
           <Link href={href("about", locale)}>{dict.nav.about}</Link>
+          <Link href={href("faq", locale)}>{dict.nav.faq}</Link>
           <Link href={href("contact", locale)}>{dict.nav.contact}</Link>
         </div>
         <div className="ck-footer__col">

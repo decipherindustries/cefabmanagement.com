@@ -1,5 +1,5 @@
 export interface Dictionary {
-  nav: { home: string; about: string; contact: string };
+  nav: { home: string; about: string; contact: string; faq: string };
   hero: { badge: string; title: string; lead: string; cta: string; cta2: string };
   problems: { title: string; subtitle: string; items: string[] }; // 12
   why: { title: string; subtitle: string; cards: { title: string; body: string }[] }; // 4
@@ -17,7 +17,7 @@ export interface Dictionary {
     tiers: { name: string; popular?: boolean; availability: string; forWhom: string; features: string[] }[]; // 3
     project: { name: string; items: string[]; note: string };
   };
-  faq: { title: string; items: { q: string; a: string }[] }; // 15
+  faq: { title: string; subtitle: string; items: { q: string; a: string }[] }; // 15
   about: {
     title: string; intro: string; bio: string; linkedin: string; cv: string;
     stats: { value: string; label: string }[]; // 4
@@ -35,5 +35,6 @@ export interface Dictionary {
     home: { title: string; description: string };
     about: { title: string; description: string };
     contact: { title: string; description: string };
+    faq: { title: string; description: string };
   };
 }

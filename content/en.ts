@@ -5,6 +5,7 @@ export const en: Dictionary = {
     home: "Home",
     about: "About Me",
     contact: "Contact",
+    faq: "FAQ",
   },
   hero: {
     badge: "Fractional CFO/COO",
@@ -147,6 +148,8 @@ export const en: Dictionary = {
   },
   faq: {
     title: "Frequently asked questions",
+    subtitle:
+      "Straight answers on how a fractional CFO/COO partnership with me works - scope, pricing, timelines, tools, contracts and fit.",
     items: [
       {
         q: "How quickly can you start?",
@@ -271,6 +274,11 @@ export const en: Dictionary = {
       title: "Contact · Catherine Cruickshank CFO/COO",
       description:
         "Want to know if we're a good match? Schedule a no-obligation call or send a message.",
+    },
+    faq: {
+      title: "FAQ · Catherine Cruickshank CFO/COO",
+      description:
+        "Answers to common questions about working with a fractional CFO/COO - scope, pricing, timelines, tools, contracts and fit.",
     },
   },
 };

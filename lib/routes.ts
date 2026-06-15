@@ -2,13 +2,14 @@ export const LOCALES = ["nl", "en"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "nl";
 
-export type PageKey = "home" | "about" | "contact";
+export type PageKey = "home" | "about" | "contact" | "faq";
 
 /** Internal (file-route) slug per page - English-based, locale-independent. */
 const INTERNAL_SLUG: Record<PageKey, string> = {
   home: "",
   about: "about",
   contact: "contact",
+  faq: "faq",
 };
 
 /** Public slug per page per locale. */
@@ -16,6 +17,7 @@ const PUBLIC_SLUG: Record<PageKey, Record<Locale, string>> = {
   home: { nl: "", en: "" },
   about: { nl: "over-mij", en: "about" },
   contact: { nl: "contact", en: "contact" },
+  faq: { nl: "faq", en: "faq" },
 };
 
 export function isLocale(value: string): value is Locale {
