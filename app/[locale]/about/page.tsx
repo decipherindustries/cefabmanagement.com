@@ -7,6 +7,7 @@ import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/Button";
 import { AboutHero } from "@/components/sections/AboutHero";
 import { StatStrip } from "@/components/sections/StatStrip";
+import { LogoStrip } from "@/components/sections/LogoStrip";
 import { Connect } from "@/components/sections/Connect";
 import { Linkedin } from "lucide-react";
 import { SITE } from "@/lib/site";
@@ -50,6 +51,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <StatStrip dict={dict} />
       </Section>
       <Connect locale={locale as Locale} dict={dict} />
+      <LogoStrip dict={dict} />
     </main>
   );
 }

@@ -29,8 +29,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main>
       <Hero locale={locale as Locale} dict={dict} />
-      <LogoStrip dict={dict} />
       <SoundFamiliar dict={dict} />
+      <LogoStrip dict={dict} />
       <WhyWorkTogether dict={dict} />
       <WhatIDo dict={dict} />
       <Packages locale={locale as Locale} dict={dict} />

@@ -6,6 +6,7 @@ import { buildAlternates, canonicalFor } from "@/lib/seo";
 import { Container } from "@/components/layout/Container";
 import { Header } from "@/components/layout/Header";
 import { Section } from "@/components/layout/Section";
+import { LogoStrip } from "@/components/sections/LogoStrip";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { SITE } from "@/lib/site";
 import { ObfuscatedEmail } from "@/components/ui/ObfuscatedEmail";
@@ -45,6 +46,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <ContactForm dict={dict} />
         </div>
       </Section>
+      <LogoStrip dict={dict} />
     </main>
   );
 }
