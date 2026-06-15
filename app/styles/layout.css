@@ -145,3 +145,11 @@
 .ck-form{ display:flex; flex-direction:column; gap:18px; }
 .ck-form__interests{ border:0; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; }
 .ck-form__interests legend{ margin-bottom:4px; }
+
+.ck-contact__body{ display:grid; grid-template-columns: .8fr 1.2fr; gap:56px; align-items:start; }
+.ck-contact__info{ display:flex; flex-direction:column; gap:18px; }
+.ck-contact__row{ display:flex; align-items:center; gap:12px; color:var(--text-body); font-size:var(--text-base); }
+.ck-contact__row a{ color:var(--text-body); text-decoration:none; }
+.ck-contact__row a:hover{ color:var(--blue-600); }
+.ck-contact__row svg{ width:20px; height:20px; color:var(--blue-600); flex:none; }
+@media (max-width: 980px){ .ck-contact__body{ grid-template-columns:1fr; gap:32px; } }
