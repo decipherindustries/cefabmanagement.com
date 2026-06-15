@@ -9,7 +9,7 @@ export const nl: Dictionary = {
   hero: {
     badge: "Fractional CFO/COO",
     title: "Business partner voor scale-ups die klaar zijn voor de volgende fase",
-    lead: "Ik help ambitieuze ondernemers (€3-25M omzet) die weten wat ze doen maar tegen de limieten van hun systemen aanlopen. Niet met rapporten en adviezen, maar door hands-on mee te bouwen aan de finance, operations en processen die nodig zijn om 5-10x (of meer) te groeien.",
+    lead: "Ik help ambitieuze ondernemers die weten wat ze doen maar tegen de limieten van hun systemen aanlopen. Niet met rapporten en adviezen, maar door hands-on mee te bouwen aan de finance, operations en processen die nodig zijn om 5-10x (of meer) te groeien.",
     cta: "Plan een gesprek",
     cta2: "Meer informatie",
   },
@@ -248,7 +248,7 @@ export const nl: Dictionary = {
     home: {
       title: "Catherine Cruickshank · Fractional CFO/COO voor scale-ups",
       description:
-        "Hands-on fractional CFO/COO voor €3-25M scale-ups. Ik bouw de finance, operations en systemen om 5-10x te groeien — operator, geen adviseur.",
+        "Hands-on fractional CFO/COO voor ambitieuze scale-ups. Ik bouw de finance, operations en systemen om 5-10x te groeien — operator, geen adviseur.",
     },
     about: {
       title: "Over Catherine Cruickshank · CFO/COO",

@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: d.title, description: d.description,
     alternates: { ...buildAlternates("contact"), canonical: canonicalFor("contact", locale) },
-    openGraph: { title: d.title, description: d.description, url: canonicalFor("contact", locale) },
+    openGraph: { title: d.title, description: d.description, url: canonicalFor("contact", locale), images: ["/portrait-catherine.png"] },
   };
 }
 

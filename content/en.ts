@@ -9,7 +9,7 @@ export const en: Dictionary = {
   hero: {
     badge: "Fractional CFO/COO",
     title: "Business partner for scale-ups ready for the next phase",
-    lead: "I help ambitious entrepreneurs (€3-25M revenue) who know what they're doing but are hitting the limits of their systems. Not with reports and advice, but by hands-on building the finance, operations and processes needed to grow 5-10x (or more).",
+    lead: "I help ambitious entrepreneurs who know what they're doing but are hitting the limits of their systems. Not with reports and advice, but by hands-on building the finance, operations and processes needed to grow 5-10x (or more).",
     cta: "Schedule a call",
     cta2: "Learn more",
   },
@@ -247,7 +247,7 @@ export const en: Dictionary = {
     home: {
       title: "Catherine Cruickshank · Fractional CFO/COO for scale-ups",
       description:
-        "Hands-on fractional CFO/COO for €3-25M scale-ups. I build the finance, operations and systems you need to grow 5-10x — operator, not advisor.",
+        "Hands-on fractional CFO/COO for ambitious scale-ups. I build the finance, operations and systems you need to grow 5-10x — operator, not advisor.",
     },
     about: {
       title: "About Catherine Cruickshank · CFO/COO",
