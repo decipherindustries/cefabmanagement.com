@@ -32,6 +32,12 @@ Project rules for this codebase. Read alongside the README.
   SvelteKit peer).
 - Don't add AI co-authorship trailers to commits.
 
+## Git workflow
+
+- **Work directly on `main`.** This project commits and pushes straight to `main`
+  (also the GitHub default branch) — no feature-branch / `development` flow here.
+  This overrides the global git-flow branching convention.
+
 ## Before shipping
 
 All of these must pass:
