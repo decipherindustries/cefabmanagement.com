@@ -21,6 +21,7 @@ export interface Dictionary {
     title: string; subtitle: string;
     name: string; email: string; phone: string; company: string;
     interest: string; tiers: string[]; message: string; send: string; success: string;
+    sending: string; error: string;
   };
   footer: { tagline: string; rights: string; linksHeading: string; contactHeading: string };
   connect: { title: string; subtitle: string; cta: string };

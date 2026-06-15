@@ -230,6 +230,8 @@ export const nl: Dictionary = {
     message: "Bericht",
     send: "Verstuur",
     success: "Bedankt voor je bericht! Ik neem snel contact met je op.",
+    sending: "Versturen…",
+    error: "Er ging iets mis. Probeer het opnieuw of mail ons direct.",
   },
   footer: {
     tagline:

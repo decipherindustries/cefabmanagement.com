@@ -230,6 +230,8 @@ export const en: Dictionary = {
     message: "Message",
     send: "Send",
     success: "Thank you for your message! I'll get back to you soon.",
+    sending: "Sending…",
+    error: "Something went wrong. Please try again, or email us directly.",
   },
   footer: {
     tagline: "Fractional CFO/COO for scale-ups ready for the next phase",
