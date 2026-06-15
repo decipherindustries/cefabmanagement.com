@@ -80,6 +80,7 @@ export const en: Dictionary = {
   },
   pricing: {
     title: "Packages",
+    popularLabel: "Popular",
     subtitlePrefix: "",
     subtitleLink: "Contact",
     subtitleSuffix: " us for more information",

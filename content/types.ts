@@ -6,6 +6,7 @@ export interface Dictionary {
   services: { title: string; subtitle: string; cards: { title: string; body: string }[] }; // 4
   pricing: {
     title: string;
+    popularLabel: string;
     subtitlePrefix: string; subtitleLink: string; subtitleSuffix: string;
     tiers: { name: string; popular?: boolean; availability: string; forWhom: string; features: string[] }[]; // 3
     project: { name: string; items: string[]; note: string };

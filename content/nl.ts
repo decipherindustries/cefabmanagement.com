@@ -80,6 +80,7 @@ export const nl: Dictionary = {
   },
   pricing: {
     title: "Packages",
+    popularLabel: "Populair",
     subtitlePrefix: "Neem ",
     subtitleLink: "contact",
     subtitleSuffix: " op voor meer informatie",
