@@ -5,6 +5,7 @@ import { buildAlternates, canonicalFor } from "@/lib/seo";
 import { Hero } from "@/components/sections/Hero";
 import { SoundFamiliar } from "@/components/sections/SoundFamiliar";
 import { WhyWorkTogether } from "@/components/sections/WhyWorkTogether";
+import { WhatIDo } from "@/components/sections/WhatIDo";
 import { Connect } from "@/components/sections/Connect";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -27,6 +28,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Hero locale={locale as Locale} dict={dict} />
       <SoundFamiliar dict={dict} />
       <WhyWorkTogether dict={dict} />
+      <WhatIDo dict={dict} />
       <Connect locale={locale as Locale} dict={dict} />
     </main>
   );
