@@ -114,3 +114,17 @@
     .ck-sf__grid, .ck-grid4, .ck-pricing, .ck-project__grid { grid-template-columns: 1fr; }
     :root { --text-display: 44px; }
   }
+
+  .ck-mobile { display: none; }
+  .ck-mobile__btn { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.16);
+    color: #fff; border-radius: var(--radius-md); width: 42px; height: 42px; display: inline-flex;
+    align-items: center; justify-content: center; cursor: pointer; }
+  .ck-mobile__btn svg { width: 20px; height: 20px; }
+  .ck-mobile__drawer { position: absolute; left: 0; right: 0; top: 100%; margin: 0 24px;
+    background: var(--navy-800); border: 1px solid var(--border-on-dark); border-radius: var(--radius-lg);
+    padding: 16px; display: flex; flex-direction: column; gap: 14px; z-index: 20; }
+  .ck-mobile__drawer a { color: #fff; text-decoration: none; font-weight: var(--fw-medium); }
+  @media (max-width: 640px) {
+    .ck-mobile { display: block; }
+    .ck-header__inner { position: relative; }
+  }
