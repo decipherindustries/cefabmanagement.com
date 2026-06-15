@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { karla, instrumentSerif } from "@/lib/fonts";
 import { SITE_URL } from "@/lib/seo";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Analytics />
+        <SpeedInsights />
         {gaEnabled ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>
