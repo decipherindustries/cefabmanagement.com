@@ -6,7 +6,11 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { karla, instrumentSerif } from "@/lib/fonts";
 import { SITE_URL } from "@/lib/seo";
 
-export const metadata: Metadata = { metadataBase: new URL(SITE_URL) };
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  openGraph: { type: "website", siteName: "Catherine Cruickshank · CFO/COO" },
+  twitter: { card: "summary_large_image" },
+};
 
 // GA4 Measurement ID (public — ships in client HTML). Overridable via env.
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-FKVV7HJ6MQ";
