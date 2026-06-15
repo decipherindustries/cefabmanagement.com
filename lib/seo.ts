@@ -1,4 +1,5 @@
 import { LOCALES, href, type Locale, type PageKey } from "@/lib/routes";
+import { SITE } from "@/lib/site";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cefabmanagement.com";
 
@@ -23,24 +24,24 @@ export function personJsonLd() {
     "@graph": [
       {
         "@type": "Person",
-        name: "Catherine Cruickshank",
+        name: SITE.name,
         jobTitle: "Fractional CFO/COO",
-        email: "mailto:catherine@cefabmanagement.com",
-        telephone: "+31611357737",
+        email: `mailto:${SITE.email}`,
+        telephone: `+${SITE.phoneHref.replace(/^\+/, "")}`,
         url: SITE_URL,
-        worksFor: { "@type": "Organization", name: "CEFAB Management" },
-        // sameAs: ["<LinkedIn URL — TODO owner to provide>"],
+        worksFor: { "@type": "Organization", name: SITE.legalName },
+        sameAs: [SITE.linkedin],
       },
       {
         "@type": "ProfessionalService",
-        name: "CEFAB Management",
+        name: SITE.legalName,
         description:
           "Hands-on fractional CFO/COO for €3-25M scale-ups in the Netherlands, Germany and the UK.",
-        email: "mailto:catherine@cefabmanagement.com",
-        telephone: "+31611357737",
+        email: `mailto:${SITE.email}`,
+        telephone: `+${SITE.phoneHref.replace(/^\+/, "")}`,
         url: SITE_URL,
         areaServed: ["NL", "DE", "GB"],
-        founder: { "@type": "Person", name: "Catherine Cruickshank" },
+        founder: { "@type": "Person", name: SITE.name },
       },
     ],
   };
