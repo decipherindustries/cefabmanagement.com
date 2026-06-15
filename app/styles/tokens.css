@@ -1,0 +1,161 @@
+/* COLORS
+   Base palette + semantic aliases.
+   Brand anchors: navy #192333, light #f9fafb, ink #111828, blue #165DFC. */
+:root {
+  /* ---- Navy (dark surfaces: hero, footer, popular pricing card) ---- */
+  --navy-950: #0f1726;
+  --navy-900: #192333; /* primary dark surface */
+  --navy-800: #222d40;
+  --navy-700: #2d394f;
+  --navy-600: #3a4660;
+
+  /* ---- Ink / neutral (text + light surfaces) ---- */
+  --ink-900: #111828; /* primary text on light */
+  --ink-700: #334155; /* body text on light */
+  --ink-500: #64748b; /* muted / secondary text */
+  --ink-400: #94a3b8; /* subtle / placeholder */
+  --ink-300: #cbd5e1; /* borders on light */
+  --ink-200: #e2e8f0; /* hairline borders */
+  --ink-100: #eef1f6; /* card fill / soft surface */
+  --ink-50:  #f9fafb; /* page background (light) */
+  --white:   #ffffff;
+
+  /* ---- Blue (accent / secondary: icons, links, focus) ---- */
+  --blue-700: #0f47c9;
+  --blue-600: #165dfc; /* brand accent */
+  --blue-500: #3b78ff;
+  --blue-100: #e3edff; /* tint fill */
+  --blue-50:  #f1f6ff;
+
+  /* ---- Status (derived, harmonious) ---- */
+  --green-600: #16895b;
+  --amber-600: #c2700d;
+  --red-600:   #d4483b;
+
+  /* ---- On-dark text (used inside navy surfaces) ---- */
+  --on-dark-strong: #ffffff;
+  --on-dark-body:   #c5cdda; /* paragraph text on navy */
+  --on-dark-muted:  #8a94a6; /* captions / footer meta */
+
+  /* ============ SEMANTIC ALIASES ============ */
+  /* Surfaces */
+  --surface-page:       var(--ink-50);
+  --surface-card:       var(--white);
+  --surface-soft:       var(--ink-100);
+  --surface-dark:       var(--navy-900);
+  --surface-dark-soft:  var(--navy-800);
+
+  /* Text */
+  --text-heading:   var(--ink-900);
+  --text-body:      var(--ink-700);
+  --text-muted:     var(--ink-500);
+  --text-on-dark:   var(--on-dark-strong);
+  --text-on-dark-body: var(--on-dark-body);
+  --text-on-dark-muted: var(--on-dark-muted);
+  --text-link:      var(--blue-600);
+
+  /* Accent */
+  --accent:         var(--blue-600);
+  --accent-hover:   var(--blue-700);
+  --accent-tint:    var(--blue-100);
+
+  /* Borders */
+  --border-default: var(--ink-200);
+  --border-strong:  var(--ink-300);
+  --border-on-dark: rgba(255, 255, 255, 0.12);
+
+  /* Focus ring */
+  --focus-ring: rgba(22, 93, 252, 0.35);
+}
+
+/* TYPOGRAPHY
+   Display = Instrument Serif. Body/UI = Karla. */
+:root {
+  /* Families */
+  --font-display: "Instrument Serif", "Times New Roman", Georgia, serif;
+  --font-body: "Karla", "Helvetica Neue", Arial, sans-serif;
+
+  /* Weights (Karla) */
+  --fw-light: 300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500; /* @kind font */
+  --fw-semibold: 600; /* @kind font */
+  --fw-bold: 700; /* @kind font */
+
+  /* Display scale (Instrument Serif — set tight, large) */
+  --text-display: 64px;   /* hero h1 */
+  --text-h1: 48px;        /* section hero */
+  --text-h2: 38px;        /* section title ("Packages") */
+  --text-h3: 28px;        /* card / sub-section title */
+  --text-h4: 22px;        /* small heading */
+
+  /* Body scale (Karla) */
+  --text-lead: 20px;      /* hero intro / section subtitle */
+  --text-base: 17px;      /* default body */
+  --text-sm: 15px;        /* secondary / list */
+  --text-xs: 13px;        /* captions, badge, footer meta */
+
+  /* Line heights */
+  --lh-display: 1.05; /* @kind other */
+  --lh-heading: 1.12; /* @kind other */
+  --lh-snug: 1.35; /* @kind other */
+  --lh-body: 1.6; /* @kind other */
+
+  /* Letter spacing */
+  --ls-tight: -0.01em; /* @kind other */
+  --ls-normal: 0; /* @kind other */
+  --ls-wide: 0.02em; /* @kind other */
+  --ls-eyebrow: 0.08em; /* @kind other */
+}
+
+/* SPACING + RADII + LAYOUT
+   4px base grid. */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;   /* icon badges, inputs */
+  --radius-lg: 16px;   /* cards */
+  --radius-xl: 24px;   /* large panels / pricing cards */
+  --radius-pill: 999px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: 24px;
+  --section-y: 96px;   /* vertical rhythm between sections */
+}
+
+/* ELEVATION — soft, low-contrast shadows. Cards stay flat with subtle lift. */
+:root {
+  --shadow-xs: 0 1px 2px rgba(17, 24, 40, 0.04);
+  --shadow-sm: 0 1px 3px rgba(17, 24, 40, 0.06), 0 1px 2px rgba(17, 24, 40, 0.04);
+  --shadow-md: 0 4px 16px rgba(17, 24, 40, 0.06), 0 2px 6px rgba(17, 24, 40, 0.04);
+  --shadow-lg: 0 12px 32px rgba(17, 24, 40, 0.10), 0 4px 12px rgba(17, 24, 40, 0.05);
+  --shadow-dark: 0 18px 48px rgba(9, 14, 25, 0.45); /* navy popular card */
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 360ms; /* @kind other */
+}
+
+/* Append after the copied typography tokens, inside :root */
+:root {
+  --font-display: var(--font-display-loaded), "Times New Roman", Georgia, serif;
+  --font-body: var(--font-body-loaded), "Helvetica Neue", Arial, sans-serif;
+}

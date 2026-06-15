@@ -1,1 +1,25 @@
 @import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/components.css";
+@import "./styles/layout.css";
+
+@theme inline {
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-800: var(--navy-800);
+  --color-ink-900: var(--ink-900);
+  --color-ink-700: var(--ink-700);
+  --color-ink-500: var(--ink-500);
+  --color-ink-200: var(--border-default);
+  --color-ink-100: var(--ink-100);
+  --color-ink-50: var(--ink-50);
+  --color-blue-600: var(--blue-600);
+  --color-blue-100: var(--blue-100);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+}
