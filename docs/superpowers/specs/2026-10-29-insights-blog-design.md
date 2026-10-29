@@ -150,10 +150,8 @@ It ships live, not as a draft.
 
 ### Contact form
 - Change the default recipient in `lib/brevo.ts` from catherine@ to directie@ and
-  update its test. `CONTACT_TO_ADDRESS` still overrides. Checked 2026-10-29 with
-  `vercel env ls`: `CONTACT_TO_ADDRESS` is **not** set in Production on
-  `cefabmanagement-com-2346`, so the code default is what production uses and this
-  change is sufficient. (The local `.env` sets it to directie@; that only affects dev.)
+  update its test. `CONTACT_TO_ADDRESS` still overrides. `CONTACT_TO_ADDRESS` is set to directie@cefabmanagement.com in Production on
+  `cefabmanagement-com-2346`; the code default now matches it.
 
 ## Manual setup Fabian (or Claude via the Vercel CLI) does
 

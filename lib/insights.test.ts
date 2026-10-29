@@ -23,6 +23,10 @@ describe("getAllPosts", () => {
 });
 
 describe("getPost", () => {
+  it("defaults the author to Catherine Cruickshank", () => {
+    expect(getPost("noauthor", FIX)?.author).toBe("Catherine Cruickshank");
+  });
+
   it("returns null for unknown or unsafe slugs", () => {
     expect(getPost("nope", FIX)).toBeNull();
     expect(getPost("../package", FIX)).toBeNull();

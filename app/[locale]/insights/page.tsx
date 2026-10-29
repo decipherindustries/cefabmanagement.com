@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: d.title, description: d.description,
     alternates: { ...buildAlternates("insights"), canonical: canonicalFor("insights", locale) },
-    openGraph: { title: d.title, description: d.description, url: canonicalFor("insights", locale), images: ["/portrait-catherine.png"] },
+    openGraph: { siteName: "Catherine Cruickshank · CFO/COO", title: d.title, description: d.description, url: canonicalFor("insights", locale), images: ["/portrait-catherine.png"] },
   };
 }
 

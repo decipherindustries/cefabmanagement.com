@@ -46,6 +46,25 @@ describe("POST /api/newsletter", () => {
     expect(mockedSubscribe).not.toHaveBeenCalled();
   });
 
+  it("returns 400 bad-json for a null body", async () => {
+    const res = await POST(makeReq(null));
+    expect(res.status).toBe(400);
+    expect((await res.json()).error).toBe("bad-json");
+  });
+
+  it("returns 400 validation for a non-string email", async () => {
+    const res = await POST(makeReq({ email: 123, locale: "en" }));
+    expect(res.status).toBe(400);
+    expect((await res.json()).error).toBe("validation");
+  });
+
+  it("returns 400 validation for a 255-character email", async () => {
+    const res = await POST(makeReq({ email: `${"a".repeat(243)}@example.com`, locale: "en" }));
+    expect(res.status).toBe(400);
+    expect((await res.json()).error).toBe("validation");
+    expect(mockedSubscribe).not.toHaveBeenCalled();
+  });
+
   it("defaults an unknown locale to en", async () => {
     await POST(makeReq({ email: "a@b.co", locale: "de" }));
     expect(mockedSubscribe).toHaveBeenCalledWith("a@b.co", "en");

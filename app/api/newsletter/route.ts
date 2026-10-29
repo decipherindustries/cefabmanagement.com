@@ -5,9 +5,11 @@ import { subscribeNewsletter, sendNewsletterNotification } from "@/lib/brevo";
 import { isLocale } from "@/lib/routes";
 
 export async function POST(req: NextRequest) {
-  let body: { email?: string; locale?: string; captchaToken?: string; company_url?: string };
+  let body: { email?: unknown; locale?: string; captchaToken?: string; company_url?: string };
   try {
-    body = await req.json();
+    const parsed: unknown = await req.json();
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) throw new Error("not-object");
+    body = parsed;
   } catch {
     return NextResponse.json({ ok: false, error: "bad-json" }, { status: 400 });
   }
@@ -15,8 +17,8 @@ export async function POST(req: NextRequest) {
   // Honeypot: real users never fill `company_url`. Pretend success, do nothing.
   if (body.company_url) return NextResponse.json({ ok: true });
 
-  const email = (body.email ?? "").trim();
-  if (!EMAIL_RE.test(email))
+  const email = typeof body.email === "string" ? body.email.trim() : "";
+  if (email.length > 254 || !EMAIL_RE.test(email))
     return NextResponse.json({ ok: false, error: "validation" }, { status: 400 });
   const locale = body.locale && isLocale(body.locale) ? body.locale : "en";
 

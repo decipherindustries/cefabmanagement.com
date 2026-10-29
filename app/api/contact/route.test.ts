@@ -75,6 +75,12 @@ describe("POST /api/contact", () => {
     expect((await res.json()).error).toBe("send-failed");
   });
 
+  it("returns 400 bad-json for a null body", async () => {
+    const res = await POST(makeReq(null));
+    expect(res.status).toBe(400);
+    expect((await res.json()).error).toBe("bad-json");
+  });
+
   it("returns 400 on malformed JSON", async () => {
     const req = new NextRequest("http://localhost/api/contact", {
       method: "POST",

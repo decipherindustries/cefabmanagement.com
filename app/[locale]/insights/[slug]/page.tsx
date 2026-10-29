@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     // One language per post, so no hreflang pair: both locales point at /en.
     alternates: { canonical: url },
     openGraph: {
-      type: "article", title, description: post.description, url,
+      type: "article", siteName: "Catherine Cruickshank · CFO/COO", title, description: post.description, url,
       publishedTime: post.date, modifiedTime: post.updated ?? post.date, authors: ["Catherine Cruickshank"],
     },
   };

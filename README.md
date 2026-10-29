@@ -169,6 +169,8 @@ Brevo double opt-in request via `lib/brevo.ts`).
 3. Create a confirmation (double opt-in) template containing the `{{ doubleoptin }}` link,
    tag `optin`, sender `noreply@cefabmanagement.com`. Activate it and note its ID.
 4. Set `BREVO_NEWSLETTER_LIST_ID` and `BREVO_DOI_TEMPLATE_ID` in Vercel, then redeploy.
+   Done: list ID 3 and template ID 1 are set in Vercel Production (`cefabmanagement-com-2346`);
+   the steps above stay as reference for a rebuild.
 5. Check the API key has contacts permission and that Brevo "authorised IPs" does not
    block Vercel.
 
@@ -177,11 +179,8 @@ Until the IDs are set, the sign-up returns a generic error and logs
 
 ## Owner to-dos (later)
 
-- Configure Brevo (verify domain + API key) and reCAPTCHA (register site) in Vercel to
-  make the contact form send - see "Contact form" above.
 - Write a privacy statement page, then link it from the newsletter sign-up and the footer.
 - Delete the unused Vercel project `cefabmanagement-com`.
-- Create the Brevo list and confirmation template - see "Brevo newsletter setup" above.
 - Replace the portrait with a higher-res original when available
   (`public/portrait-catherine.png`).
 - Swap "Schedule a call" to a real booking URL if desired (currently links to Contact).

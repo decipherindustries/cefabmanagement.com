@@ -6,7 +6,9 @@ import { sendContactEmail } from "@/lib/brevo";
 export async function POST(req: NextRequest) {
   let body: ContactValues & { captchaToken?: string; company_url?: string };
   try {
-    body = await req.json();
+    const parsed: unknown = await req.json();
+    if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) throw new Error("not-object");
+    body = parsed as typeof body;
   } catch {
     return NextResponse.json({ ok: false, error: "bad-json" }, { status: 400 });
   }

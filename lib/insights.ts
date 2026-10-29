@@ -69,7 +69,7 @@ function readPost(slug: string, dir: string): (Post & { draft: boolean }) | null
     summary: String(data.summary),
     date: isoDate(data.date),
     updated: data.updated ? isoDate(data.updated) : undefined,
-    author: data.author ? String(data.author) : "CEFAB Management",
+    author: data.author ? String(data.author) : "Catherine Cruickshank",
     lang: data.lang === "nl" ? "nl" : "en",
     readingMinutes: readingMinutes(markdown),
     html: marked.parse(markdown, { async: false }),
