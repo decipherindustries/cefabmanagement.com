@@ -4,7 +4,7 @@ export interface ContactValues {
 }
 export type ContactErrors = Partial<Record<keyof ContactValues, string>>;
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function validateContact(v: ContactValues): ContactErrors {
   const e: ContactErrors = {};
