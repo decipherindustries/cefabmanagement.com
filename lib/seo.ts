@@ -1,4 +1,5 @@
-import { LOCALES, href, type Locale, type PageKey } from "@/lib/routes";
+import type { PostMeta } from "@/lib/insights";
+import { LOCALES, href, postHref, type Locale, type PageKey } from "@/lib/routes";
 import { SITE } from "@/lib/site";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://cefabmanagement.com";
@@ -52,6 +53,39 @@ export function personJsonLd() {
         url: SITE_URL,
         areaServed: ["NL", "DE", "GB"],
         founder: { "@type": "Person", name: SITE.name },
+      },
+    ],
+  };
+}
+
+/** Posts are written in English, so the /en URL is canonical for both locales. */
+export function postCanonical(slug: string): string {
+  return absolute(postHref(slug, "en"));
+}
+
+export function blogPostingJsonLd(post: PostMeta) {
+  const url = postCanonical(post.slug);
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.updated ?? post.date,
+        inLanguage: post.lang,
+        image: `${url}/opengraph-image`,
+        author: { "@type": "Person", name: SITE.name, url: SITE_URL, sameAs: [SITE.linkedin] },
+        publisher: { "@type": "Organization", name: SITE.legalName, url: SITE_URL },
+        mainEntityOfPage: url,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Insights", item: absolute(href("insights", "en")) },
+          { "@type": "ListItem", position: 2, name: post.title, item: url },
+        ],
       },
     ],
   };

@@ -72,7 +72,7 @@ export function NewsletterSignup({ dict, locale, tone }: { dict: Dictionary; loc
           <Input id={emailId} type="email" name="email" autoComplete="email" placeholder={n.placeholder}
             value={email} aria-invalid={invalid} aria-describedby={invalid ? `${emailId}-error` : undefined}
             onChange={(e) => setEmail(e.target.value)} />
-          {invalid && <span id={`${emailId}-error`} className="cc-field__hint" style={{ color: "var(--red-600)" }}>{dict.contact.email}</span>}
+          {invalid && <span id={`${emailId}-error`} className="cc-field__hint ck-newsletter__error">{dict.contact.email}</span>}
 
           {/* Honeypot - visually hidden, never shown to real users. */}
           <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0, overflow: "hidden" }}>
