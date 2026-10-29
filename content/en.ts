@@ -49,7 +49,7 @@ export const en: Dictionary = {
       },
       {
         title: "Proven track record",
-        body: "10+ years CFO/COO in scale-ups (€5-100M, up to 150 FTE). Real outcomes: a €60-80M exit at GreenFlux, EBITDA-positive in 12 months at Fleks, 40% lower overhead at Triple Solar, 60% faster reporting at Telio. I've seen this movie before - including the next phase.",
+        body: "10+ years in senior finance and operations roles (€5-100M, up to 150 FTE). Real outcomes: an €80M exit at GreenFlux, EBITDA-positive in 12 months at Fleks, 40% lower overhead at Triple Solar, 60% faster reporting at Telio. I've seen this movie before - including the next phase.",
       },
       {
         title: "CFO + COO Combination",
@@ -109,7 +109,7 @@ export const en: Dictionary = {
       {
         name: "Growth",
         popular: true,
-        availability: "~4-5 days per month availability (flexible to schedule)",
+        availability: "~6-8 days per month availability (flexible to schedule)",
         forWhom: "For whom: Active growth phase, multiple workstreams simultaneously",
         features: [
           "Everything in Foundation, plus:",
@@ -158,11 +158,11 @@ export const en: Dictionary = {
       },
       {
         q: "Do you work remotely or on-site?",
-        a: "Flexible. Typically: 1 day per week/month on-site (depending on tier) + remote availability. For critical phases (e.g., M&A due diligence), I can be present for multiple days. Location: primarily NL/Belgium, selectively DACH region.",
+        a: "Flexible. Typically: 1 day per week/month on-site (depending on tier) + remote availability. For critical phases (e.g., M&A due diligence), I can be present for multiple days. Location: primarily the Netherlands and the UK.",
       },
       {
         q: "How long does an average partnership last?",
-        a: "Fractional partnerships often last 12-24+ months - long enough to achieve real transformation. Project-based work is typically 2-6 months. Some clients scale up to full-time CFO after a year (where I help with selection), others stay with fractional because it fits perfectly.",
+        a: "Fractional partnerships often last 12-24+ months - long enough to achieve real transformation. Project-based work is typically 2-6 months.",
       },
       {
         q: "What happens if we need more (or less) capacity?",
@@ -182,7 +182,7 @@ export const en: Dictionary = {
       },
       {
         q: "Who is this NOT suitable for?",
-        a: "This partnership does not work if: You are under €2-3M revenue (too early - focus first on product-market fit) | You only need someone to keep the administration running (hire an accountant) | You expect me to 'fix' it without your involvement (partnership works two-way) | Your next step is a private equity deal where you are no longer operationally involved.",
+        a: "This partnership does not work if: You are pre-product-market fit, or still small without fast growth and healthy margins (too early) | You only need someone to keep the administration running (hire an accountant) | You expect me to 'fix' it without your involvement (partnership works two-way) | Your next step is a private equity deal where you are no longer operationally involved.",
       },
       {
         q: "How do we determine if we are a good match?",
@@ -198,7 +198,7 @@ export const en: Dictionary = {
       },
       {
         q: "What is the ROI of a fractional CFO/COO?",
-        a: "Direct ROI you see in: Better deals (5-15% better M&A or funding terms = €100k+ for a €5M deal) | Margin improvements (2-5% = €100-250k for a €5M revenue) | Preventing costly mistakes (1 bad hire costs €50-100k) | Freeing up your time (20+ hours/month = you focus on sales/strategy). Indirect ROI: faster growth through better decisions, avoiding cashflow problems, higher exit valuation through professionalism.",
+        a: "Illustrative examples for a company with around €5M revenue, not guarantees. Direct ROI: Better deals (5-15% better M&A or funding terms = €100k+ for a €5M deal) | Margin improvements (2-5% = €100-250k for a €5M revenue) | Preventing costly mistakes (1 bad hire costs €50-100k) | Freeing up your time (20+ hours/month = you focus on sales/strategy). Indirect ROI: faster growth through better decisions, avoiding cashflow problems, higher exit valuation through professionalism.",
       },
       {
         q: "How does this work contractually?",
@@ -206,23 +206,23 @@ export const en: Dictionary = {
       },
       {
         q: "Are you also available as interim or permanent CFO/COO?",
-        a: "My focus is fractional CFO/COO partnerships. Additionally, I do selective interim work (e.g., during transition phases or for exit preparation) if it fits my expertise, the client, and there is a good interpersonal and business fit. Regarding a permanent position - I never say never; but it is not my focus at this moment. A successful founder/CEO + CFO partnership in a scale-up only works if the personalities, egos, and ambitions fully align.",
+        a: "My focus is fractional CFO/COO partnerships. Additionally, I do selective interim work (e.g., during transition phases or for exit preparation) if it fits my expertise and the client, and there is a good personal and business fit. I am not available for a permanent position.",
       },
       {
         q: "Do you get equity/shares?",
-        a: "Normally not - I work on market-conform fees. For specific situations (e.g., pre-funding startup where cash is scarce, special strategic partnership, or the partnership evolves into a permanent position) a hybrid model (fee + limited equity) can be discussed. This is case-by-case customization.",
+        a: "Normally not - I work on market-conform fees. For specific situations (e.g., pre-funding startup where cash is scarce, or a special strategic partnership) a hybrid model (fee + limited equity) can be discussed. This is case-by-case customization.",
       },
     ],
   },
   about: {
     title: "About Catherine",
-    intro: "10+ years experience as CFO and COO in fast-growing scale-ups",
+    intro: "10+ years in senior finance and operations roles, most of them in fast-growing scale-ups",
     bio: "Catherine Cruickshank has over a decade of experience building and optimizing finance and operations in scale-ups from €5M to €100M revenue. She has guided companies through funding rounds, M&A processes, and exits up to €80M, and knows from experience what it takes to grow from small to large.\n\nShe combines strategic insight with a practical, hands-on approach. No reports that end up on a shelf, but concrete implementations that have direct impact on the organization. Increasingly, that means bringing AI and automation into the finance function - automating the repetitive work so the team spends its time on decisions, not data entry.",
     linkedin: "View LinkedIn profile",
     cv: "Download CV",
     stats: [
-      { value: "10+", label: "Years as CFO/COO in scale-ups" },
-      { value: "20+", label: "Group entities consolidated" },
+      { value: "10+", label: "Years in senior finance and operations roles" },
+      { value: "20", label: "Group entities consolidated" },
       { value: "€80M", label: "Largest exit" },
       { value: "10–150", label: "FTE managed" },
     ],

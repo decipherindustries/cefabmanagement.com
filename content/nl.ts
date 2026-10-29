@@ -49,7 +49,7 @@ export const nl: Dictionary = {
       },
       {
         title: "Bewezen track-record",
-        body: "10+ jaar CFO/COO in scale-ups (€5-100M, tot 150 FTE). Echte resultaten: een exit van €60-80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien - inclusief die van de volgende fase.",
+        body: "10+ jaar in senior finance- en operationsrollen (€5-100M, tot 150 FTE). Echte resultaten: een exit van €80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien - inclusief die van de volgende fase.",
       },
       {
         title: "CFO + COO Combinatie",
@@ -109,7 +109,7 @@ export const nl: Dictionary = {
       {
         name: "Growth",
         popular: true,
-        availability: "~4-5 dagen per maand beschikbaarheid (flexibel in te plannen)",
+        availability: "~6-8 dagen per maand beschikbaarheid (flexibel in te plannen)",
         forWhom: "Voor wie: Actieve groeifase, meerdere workstreams tegelijk",
         features: [
           "Alles in Foundation, plus:",
@@ -158,11 +158,11 @@ export const nl: Dictionary = {
       },
       {
         q: "Werk je remote of on-site?",
-        a: "Flexibel. Typisch: 1 dag per week/maand on-site (afhankelijk van tier) + remote beschikbaarheid. Voor kritieke fases (bijv. M&A due diligence) kan ik meerdere dagen aanwezig zijn. Locatie: primair NL/België, selectief DACH region.",
+        a: "Flexibel. Typisch: 1 dag per week/maand on-site (afhankelijk van tier) + remote beschikbaarheid. Voor kritieke fases (bijv. M&A due diligence) kan ik meerdere dagen aanwezig zijn. Locatie: primair Nederland en het Verenigd Koninkrijk.",
       },
       {
         q: "Hoelang duurt een gemiddelde samenwerking?",
-        a: "Fractional partnerships lopen vaak 12-24+ maanden - lang genoeg om échte transformatie te realiseren. Project-based werk is typisch 2-6 maanden. Sommige klanten schalen na een jaar op naar full-time CFO (waarbij ik help met selectie), anderen blijven bij fractional omdat het perfect past.",
+        a: "Fractional partnerships lopen vaak 12-24+ maanden - lang genoeg om échte transformatie te realiseren. Project-based werk is typisch 2-6 maanden.",
       },
       {
         q: "Wat gebeurt er als we meer (of minder) capaciteit nodig hebben?",
@@ -182,7 +182,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Voor wie is dit NIET geschikt?",
-        a: "Deze samenwerking werkt niet als: Je onder €2-3M omzet zit (te vroeg - focus eerst op product-market fit) | Je alleen iemand zoekt om de administratie bij te houden (neem een boekhouder) | Je verwacht dat ik het 'fix' zonder jouw betrokkenheid (partnership werkt 2-kanten op) | Je next step een private equity deal is waar je zelf niet meer operationeel betrokken bent.",
+        a: "Deze samenwerking werkt niet als: Je nog vóór product-market fit zit, of nog klein bent zonder snelle groei en gezonde marges (te vroeg) | Je alleen iemand zoekt om de administratie bij te houden (neem een boekhouder) | Je verwacht dat ik het 'fix' zonder jouw betrokkenheid (partnership werkt 2-kanten op) | Je next step een private equity deal is waar je zelf niet meer operationeel betrokken bent.",
       },
       {
         q: "Hoe bepalen we of we goed matchen?",
@@ -198,7 +198,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Wat is de ROI van een fractional CFO/COO?",
-        a: "Directe ROI zie je in: Betere deals (5-15% betere M&A of funding terms = €100k+ bij €5M deal) | Margin improvements (2-5% = €100-250k bij €5M omzet) | Voorkomen van dure fouten (1 slechte hire kost €50-100k) | Jouw tijd vrijmaken (20+ uur/maand = jij focussen op sales/strategy). Indirecte ROI: sneller groeien door betere beslissingen, vermijden van cashflow problemen, hogere exit valuation door professionalisme.",
+        a: "Illustratieve voorbeelden voor een bedrijf met zo'n €5M omzet, geen garanties. Directe ROI: Betere deals (5-15% betere M&A of funding terms = €100k+ bij €5M deal) | Margin improvements (2-5% = €100-250k bij €5M omzet) | Voorkomen van dure fouten (1 slechte hire kost €50-100k) | Jouw tijd vrijmaken (20+ uur/maand = jij focussen op sales/strategy). Indirecte ROI: sneller groeien door betere beslissingen, vermijden van cashflow problemen, hogere exit valuation door professionalisme.",
       },
       {
         q: "Hoe werkt dit contractueel?",
@@ -206,23 +206,23 @@ export const nl: Dictionary = {
       },
       {
         q: "Ben je ook beschikbaar als interim of permanent CFO/COO?",
-        a: "Mijn focus is fractional CFO/COO partnerships. Daarnaast doe ik selectief interim klussen (bijv. tijdens overgangsfases of voor exit preparation) als het past bij mijn expertise, bij de klant én als er een goede interpersoonlijke en zakelijke klik is. Wat betreft een permanente aanstelling - ik zeg nooit nooit; maar het is op dit moment niet mijn focus. Een succesvolle oprichter/CEO + CFO partnership in een scale-up werkt alleen als de persoonlijkheden, ego's en ambities volledig aansluiten.",
+        a: "Mijn focus is fractional CFO/COO partnerships. Daarnaast doe ik selectief interim klussen (bijv. tijdens overgangsfases of voor exit preparation) als het past bij mijn expertise en bij de klant, en als er een goede persoonlijke en zakelijke klik is. Voor een permanente aanstelling ben ik niet beschikbaar.",
       },
       {
         q: "Krijg je equity/aandelen?",
-        a: "Normaal niet - ik werk tegen marktconforme vergoedingen. Voor specifieke situaties (bijv. pre-funding startup waar cash schaars is, bijzondere strategische partnership of de samenwerking evolueert naar een permanente aanstelling) kan een hybrid model (fee + beperkte equity) bespreekbaar zijn. Dit is per geval maatwerk.",
+        a: "Normaal niet - ik werk tegen marktconforme vergoedingen. Voor specifieke situaties (bijv. pre-funding startup waar cash schaars is, of een bijzondere strategische partnership) kan een hybrid model (fee + beperkte equity) bespreekbaar zijn. Dit is per geval maatwerk.",
       },
     ],
   },
   about: {
     title: "Over Catherine",
-    intro: "10+ jaar ervaring als CFO en COO in snelgroeiende scale-ups",
+    intro: "10+ jaar in senior finance- en operationsrollen, de meeste in snelgroeiende scale-ups",
     bio: "Catherine Cruickshank heeft meer dan een decennium ervaring in het opbouwen en optimaliseren van finance en operations in scale-ups van €5M tot €100M omzet. Ze heeft bedrijven begeleid door funding rounds, M&A trajecten, en exits tot €80M, en weet uit ervaring wat er nodig is om van klein naar groot te groeien.\n\nZe combineert strategisch inzicht met een praktische, hands-on aanpak. Geen rapporten die op een plank blijven liggen, maar concrete implementaties die direct impact hebben op de organisatie. Steeds vaker betekent dat AI en automatisering de finance-functie in brengen - het repetitieve werk automatiseren zodat het team zijn tijd aan beslissingen besteedt, niet aan data-invoer.",
     linkedin: "Bekijk LinkedIn profiel",
     cv: "Download CV",
     stats: [
-      { value: "10+", label: "Jaar CFO/COO in scale-ups" },
-      { value: "20+", label: "Groepsentiteiten geconsolideerd" },
+      { value: "10+", label: "Jaar in senior finance- en operationsrollen" },
+      { value: "20", label: "Groepsentiteiten geconsolideerd" },
       { value: "€80M", label: "Grootste exit" },
       { value: "10–150", label: "FTE aangestuurd" },
     ],

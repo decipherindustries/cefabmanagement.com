@@ -48,10 +48,10 @@ export function personJsonLd() {
         "@type": "ProfessionalService",
         name: SITE.legalName,
         description:
-          "Hands-on fractional CFO/COO for ambitious scale-ups in the Netherlands, Germany and the UK.",
+          "Hands-on fractional CFO/COO for ambitious scale-ups in the Netherlands and the UK.",
         telephone: `+${SITE.phoneHref.replace(/^\+/, "")}`,
         url: SITE_URL,
-        areaServed: ["NL", "DE", "GB"],
+        areaServed: ["NL", "GB"],
         founder: { "@type": "Person", name: SITE.name },
       },
     ],
