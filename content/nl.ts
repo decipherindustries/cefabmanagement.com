@@ -52,7 +52,7 @@ export const nl: Dictionary = {
         body: "10+ jaar in senior finance- en operationsrollen (€5-100M, tot 150 FTE). Echte resultaten: een exit van €80M bij GreenFlux, EBITDA-positief binnen 12 maanden bij Fleks, 40% minder overhead bij Triple Solar, 60% snellere rapportage bij Telio. Ik heb de film al vaker gezien - inclusief die van de volgende fase.",
       },
       {
-        title: "CFO + COO Combinatie",
+        title: "CFO + COO combinatie",
         body: "Finance én operations - dus niet alleen focus op cijfers maar ook op mensen, systemen en processen.",
       },
     ],
@@ -182,7 +182,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Voor wie is dit NIET geschikt?",
-        a: "Deze samenwerking werkt niet als: Je nog vóór product-market fit zit, of nog klein bent zonder snelle groei en gezonde marges (te vroeg) | Je alleen iemand zoekt om de administratie bij te houden (neem een boekhouder) | Je verwacht dat ik het 'fix' zonder jouw betrokkenheid (partnership werkt 2-kanten op) | Je next step een private equity deal is waar je zelf niet meer operationeel betrokken bent.",
+        a: "Deze samenwerking werkt niet als: Je nog vóór product-market fit zit, of nog klein bent zonder snelle groei en gezonde marges (te vroeg) | Je alleen iemand zoekt om de administratie bij te houden (neem een boekhouder) | Je verwacht dat ik het 'fix' zonder jouw betrokkenheid (partnership werkt 2-kanten op) | Je next step een private equity deal is waar je zelf niet meer operationeel betrokken bent | Je bedrijf groot genoeg is voor een full-time CFO (neem er dan een aan).",
       },
       {
         q: "Hoe bepalen we of we goed matchen?",
@@ -228,8 +228,8 @@ export const nl: Dictionary = {
     ],
     testimonial: {
       quote: "Catherine maakte van onze financiën een sterkte in plaats van een zorg. Ze levert geen rapport af en vertrekt - ze duikt de systemen in, lost op wat kapot is, en geeft je cijfers waar je je bedrijf echt op kunt sturen. Het is alsof je een CFO hebt die het allemaal al eens heeft meegemaakt, zonder de fulltime overhead.",
-      author: "Oprichter & CEO",
-      role: "~€10M media & technology scale-up",
+      author: "Merijn de Waard",
+      role: "Oprichter, SuperYacht Times",
     },
   },
   contact: {

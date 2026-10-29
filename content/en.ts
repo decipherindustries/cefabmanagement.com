@@ -37,7 +37,7 @@ export const en: Dictionary = {
   why: {
     title: "Why work together?",
     subtitle:
-      "An experienced business partner who thinks along, takes work off your hands, and works within your existing organization",
+      "An experienced business partner who thinks along, takes work off your hands, and works within your existing organisation",
     cards: [
       {
         title: "Operator, not advisor",
@@ -52,7 +52,7 @@ export const en: Dictionary = {
         body: "10+ years in senior finance and operations roles (€5-100M, up to 150 FTE). Real outcomes: an €80M exit at GreenFlux, EBITDA-positive in 12 months at Fleks, 40% lower overhead at Triple Solar, 60% faster reporting at Telio. I've seen this movie before - including the next phase.",
       },
       {
-        title: "CFO + COO Combination",
+        title: "CFO + COO combination",
         body: "Finance and operations - so not just focus on numbers but also on people, systems and processes.",
       },
     ],
@@ -100,7 +100,7 @@ export const en: Dictionary = {
         availability: "~2 days per month availability (flexible to schedule)",
         forWhom: "For whom: You're growing fast, but the financial foundations haven't kept up - you want clean numbers and structure",
         features: [
-          "Setting up financial dashboards & KPI's",
+          "Setting up financial dashboards & KPIs",
           "Basic FP&A (budget, forecast, actuals)",
           "Monthly business review",
           "Ad-hoc sparring (max 4 hours/month)",
@@ -113,8 +113,8 @@ export const en: Dictionary = {
         forWhom: "For whom: Active growth phase, multiple workstreams simultaneously",
         features: [
           "Everything in Foundation, plus:",
-          "Advanced scenario modeling",
-          "System optimization (process improvement)",
+          "Advanced scenario modelling",
+          "System optimisation (process improvement)",
           "Team coaching (controller/finance)",
           "Board reporting & investor relations",
           "Weekly strategic sessions",
@@ -178,11 +178,11 @@ export const en: Dictionary = {
       },
       {
         q: "Do you work alone or with a team?",
-        a: "Primarily, I work independently within your organization. For specialized issues (e.g., international tax structure, complex M&A), I work with a network of experts. This prevents you from having to build your own team for everything.",
+        a: "Primarily, I work independently within your organisation. For specialised issues (e.g., international tax structure, complex M&A), I work with a network of experts. This prevents you from having to build your own team for everything.",
       },
       {
         q: "Who is this NOT suitable for?",
-        a: "This partnership does not work if: You are pre-product-market fit, or still small without fast growth and healthy margins (too early) | You only need someone to keep the administration running (hire an accountant) | You expect me to 'fix' it without your involvement (partnership works two-way) | Your next step is a private equity deal where you are no longer operationally involved.",
+        a: "This partnership does not work if: You are pre-product-market fit, or still small without fast growth and healthy margins (too early) | You only need someone to keep the administration running (hire an accountant) | You expect me to 'fix' it without your involvement (partnership works two-way) | Your next step is a private equity deal where you are no longer operationally involved | Your company is large enough to need a full-time CFO (hire one).",
       },
       {
         q: "How do we determine if we are a good match?",
@@ -202,7 +202,7 @@ export const en: Dictionary = {
       },
       {
         q: "How does this work contractually?",
-        a: "Fractional: mutually agreeable retainer contract (ovv). Project-based: fixed amount, clear scope, deliverables & timeline. No payroll hassle - I invoice through my BV.",
+        a: "Fractional: a retainer contract that either side can terminate. Project-based: fixed amount, clear scope, deliverables & timeline. No payroll hassle - I invoice through my company, CEFAB Management.",
       },
       {
         q: "Are you also available as interim or permanent CFO/COO?",
@@ -210,14 +210,14 @@ export const en: Dictionary = {
       },
       {
         q: "Do you get equity/shares?",
-        a: "Normally not - I work on market-conform fees. For specific situations (e.g., pre-funding startup where cash is scarce, or a special strategic partnership) a hybrid model (fee + limited equity) can be discussed. This is case-by-case customization.",
+        a: "Normally not - I work at market rates. For specific situations (e.g., pre-funding startup where cash is scarce, or a special strategic partnership) a hybrid model (fee + limited equity) can be discussed. This is decided case by case.",
       },
     ],
   },
   about: {
     title: "About Catherine",
     intro: "10+ years in senior finance and operations roles, most of them in fast-growing scale-ups",
-    bio: "Catherine Cruickshank has over a decade of experience building and optimizing finance and operations in scale-ups from €5M to €100M revenue. She has guided companies through funding rounds, M&A processes, and exits up to €80M, and knows from experience what it takes to grow from small to large.\n\nShe combines strategic insight with a practical, hands-on approach. No reports that end up on a shelf, but concrete implementations that have direct impact on the organization. Increasingly, that means bringing AI and automation into the finance function - automating the repetitive work so the team spends its time on decisions, not data entry.",
+    bio: "Catherine Cruickshank has over a decade of experience building and optimising finance and operations in scale-ups from €5M to €100M revenue. She has guided companies through funding rounds, M&A processes, and exits up to €80M, and knows from experience what it takes to grow from small to large.\n\nShe combines strategic insight with a practical, hands-on approach. No reports that end up on a shelf, but concrete implementations that have direct impact on the organisation. Increasingly, that means bringing AI and automation into the finance function - automating the repetitive work so the team spends its time on decisions, not data entry.",
     linkedin: "View LinkedIn profile",
     cv: "Download CV",
     stats: [
@@ -228,8 +228,8 @@ export const en: Dictionary = {
     ],
     testimonial: {
       quote: "Catherine turned our finances from a worry into a strength. She doesn't hand you a report and walk away - she gets into the systems, fixes what's broken, and gives you numbers you can actually run the business on. It's like having a CFO who has seen it all before, without the full-time overhead.",
-      author: "Founder & CEO",
-      role: "~€10M media & technology scale-up",
+      author: "Merijn de Waard",
+      role: "Founder, SuperYacht Times",
     },
   },
   contact: {
