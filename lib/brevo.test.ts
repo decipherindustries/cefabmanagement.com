@@ -136,6 +136,14 @@ describe("subscribeNewsletter", () => {
     expect(result).toEqual({ ok: true, status: 400 });
   });
 
+  it("treats a 400 whose message says the contact already exists as ok, without logging", async () => {
+    const err = vi.spyOn(console, "error").mockImplementation(() => {});
+    mockFetchJson(400, { code: "invalid_parameter", message: "Contact already exist" });
+    const result = await subscribeNewsletter("jane@acme.co", "en");
+    expect(result).toEqual({ ok: true, status: 400 });
+    expect(err).not.toHaveBeenCalled();
+  });
+
   it("returns ok: false and logs for other failures", async () => {
     const err = vi.spyOn(console, "error").mockImplementation(() => {});
     mockFetchJson(400, { code: "invalid_parameter" });

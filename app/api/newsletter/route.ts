@@ -26,7 +26,8 @@ export async function POST(req: NextRequest) {
   try {
     const sub = await subscribeNewsletter(email, locale);
     if (!sub.ok) return NextResponse.json({ ok: false, error: "send-failed" }, { status: 502 });
-  } catch {
+  } catch (err) {
+    console.error("[newsletter] sign-up failed", err);
     return NextResponse.json({ ok: false, error: "send-error" }, { status: 500 });
   }
 

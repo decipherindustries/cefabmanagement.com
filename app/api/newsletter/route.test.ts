@@ -77,10 +77,13 @@ describe("POST /api/newsletter", () => {
   });
 
   it("returns 500 send-error when subscribeNewsletter throws", async () => {
+    const err = vi.spyOn(console, "error").mockImplementation(() => {});
     mockedSubscribe.mockRejectedValue(new Error("BREVO_API_KEY not set"));
     const res = await POST(makeReq({ email: "a@b.co", locale: "en" }));
     expect(res.status).toBe(500);
     expect(await res.json()).toEqual({ ok: false, error: "send-error" });
+    expect(err).toHaveBeenCalled();
+    err.mockRestore();
   });
 
   it("still returns 200 when the notification fails, and logs it", async () => {

@@ -85,7 +85,9 @@ export async function subscribeNewsletter(
   // Already on the list: not an error for the visitor.
   if (res.status === 400) {
     try {
-      if (JSON.parse(detail)?.code === "duplicate_parameter") return { ok: true, status: res.status };
+      const parsed = JSON.parse(detail);
+      if (parsed?.code === "duplicate_parameter" || /already exist/i.test(String(parsed?.message ?? "")))
+        return { ok: true, status: res.status };
     } catch {
       /* not JSON */
     }
