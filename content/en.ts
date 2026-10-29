@@ -6,6 +6,7 @@ export const en: Dictionary = {
     about: "About Me",
     contact: "Contact",
     faq: "FAQ",
+    insights: "Insights",
   },
   hero: {
     badge: "Fractional CFO/COO",
@@ -279,6 +280,35 @@ export const en: Dictionary = {
       title: "FAQ · Catherine Cruickshank CFO/COO",
       description:
         "Answers to common questions about working with a fractional CFO/COO - scope, pricing, timelines, tools, contracts and fit.",
+    },
+    insights: {
+      title: "Insights · Catherine Cruickshank",
+      description:
+        "Articles by Catherine Cruickshank, fractional CFO/COO, on finance and operations for scale-ups.",
+    },
+  },
+  insights: {
+    title: "Insights",
+    intro:
+      "Articles on finance and operations for scale-ups: exit readiness, reporting and running a company on reliable numbers.",
+    read: "Read",
+    minRead: "min read",
+    breadcrumb: "Insights",
+    subscribed: "Your subscription is confirmed. New articles will arrive by email.",
+    panel: {
+      workTitle: "Work with me",
+      workBody: "Fractional CFO/COO for founders and boards.",
+      workCta: "Get in touch",
+    },
+    newsletter: {
+      title: "New insights by email",
+      body: "One email when a new article is published.",
+      placeholder: "you@company.com",
+      submit: "Subscribe",
+      sending: "Sending...",
+      success: "Check your inbox to confirm your subscription.",
+      error: "That did not work. Please try again later.",
+      note: "Unsubscribe any time.",
     },
   },
 };

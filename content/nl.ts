@@ -6,6 +6,7 @@ export const nl: Dictionary = {
     about: "Over Mij",
     contact: "Contact",
     faq: "FAQ",
+    insights: "Insights",
   },
   hero: {
     badge: "Fractional CFO/COO",
@@ -280,6 +281,35 @@ export const nl: Dictionary = {
       title: "FAQ · Catherine Cruickshank CFO/COO",
       description:
         "Antwoorden op veelgestelde vragen over werken met een fractional CFO/COO - scope, prijs, doorlooptijd, tools, contracten en fit.",
+    },
+    insights: {
+      title: "Insights · Catherine Cruickshank",
+      description:
+        "Artikelen van Catherine Cruickshank, fractional CFO/COO, over finance en operations voor scale-ups.",
+    },
+  },
+  insights: {
+    title: "Insights",
+    intro:
+      "Artikelen over finance en operations voor scale-ups: exit-gereedheid, rapportage en een bedrijf runnen op betrouwbare cijfers.",
+    read: "Lezen",
+    minRead: "min leestijd",
+    breadcrumb: "Insights",
+    subscribed: "Je inschrijving is bevestigd. Nieuwe artikelen ontvang je per e-mail.",
+    panel: {
+      workTitle: "Samenwerken",
+      workBody: "Fractional CFO/COO voor founders en boards.",
+      workCta: "Neem contact op",
+    },
+    newsletter: {
+      title: "Nieuwe insights per e-mail",
+      body: "Eén e-mail wanneer er een nieuw artikel verschijnt.",
+      placeholder: "jij@bedrijf.nl",
+      submit: "Inschrijven",
+      sending: "Versturen...",
+      success: "Check je inbox om je inschrijving te bevestigen.",
+      error: "Dat lukte niet. Probeer het later opnieuw.",
+      note: "Altijd af te melden.",
     },
   },
 };

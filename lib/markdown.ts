@@ -194,6 +194,19 @@ function renderFaq(locale: Locale): string {
   return finalize(out);
 }
 
+function renderInsights(locale: Locale): string {
+  const d = getDictionary(locale);
+  const out: string[] = [];
+
+  out.push(header("insights", locale));
+  out.push("");
+  out.push(`# ${d.insights.title}`);
+  out.push("");
+  out.push(d.insights.intro);
+
+  return finalize(out);
+}
+
 /** Trim trailing whitespace on each line; collapse to end with a single newline. */
 function finalize(lines: string[]): string {
   const body = lines.map((l) => l.replace(/[ \t]+$/g, "")).join("\n");
@@ -210,5 +223,7 @@ export function renderMarkdown(pageKey: PageKey, locale: Locale): string {
       return renderContact(locale);
     case "faq":
       return renderFaq(locale);
+    case "insights":
+      return renderInsights(locale);
   }
 }

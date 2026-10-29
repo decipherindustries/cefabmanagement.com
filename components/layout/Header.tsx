@@ -9,7 +9,7 @@ export function Header({
   nav,
 }: {
   locale: Locale;
-  nav: { home: string; about: string; contact: string; faq: string };
+  nav: { home: string; about: string; contact: string; faq: string; insights: string };
 }) {
   return (
     <header className="ck-header">
@@ -23,6 +23,9 @@ export function Header({
           </Link>
           <Link className="ck-nav__link" href={href("about", locale)}>
             {nav.about}
+          </Link>
+          <Link className="ck-nav__link" href={href("insights", locale)}>
+            {nav.insights}
           </Link>
           <Link className="ck-nav__link" href={href("faq", locale)}>
             {nav.faq}

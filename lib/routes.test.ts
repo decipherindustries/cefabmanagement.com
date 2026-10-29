@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   LOCALES, DEFAULT_LOCALE, isLocale, href, localizePathname,
-  resolvePublicPath, canonicalInternalPath,
+  resolvePublicPath, canonicalInternalPath, postHref, parsePostPath,
 } from "./routes";
 
 describe("routes", () => {
@@ -44,5 +44,23 @@ describe("routes", () => {
     expect(canonicalInternalPath("/nl/over-mij")).toBe("/nl/about");
     expect(canonicalInternalPath("/en/about")).toBe("/en/about");
     expect(canonicalInternalPath("/nl")).toBe("/nl");
+  });
+
+  it("handles the insights page key", () => {
+    expect(href("insights", "nl")).toBe("/nl/insights");
+    expect(resolvePublicPath("/en/insights")).toEqual({ locale: "en", pageKey: "insights" });
+    expect(canonicalInternalPath("/nl/insights")).toBe("/nl/insights");
+  });
+
+  it("postHref builds a post URL", () => {
+    expect(postHref("x-y", "nl")).toBe("/nl/insights/x-y");
+  });
+
+  it("parsePostPath parses post URLs only", () => {
+    expect(parsePostPath("/en/insights/x-y")).toEqual({ locale: "en", slug: "x-y" });
+    expect(parsePostPath("/en/insights/x-y/")).toEqual({ locale: "en", slug: "x-y" });
+    expect(parsePostPath("/en/insights")).toBeNull();
+    expect(parsePostPath("/de/insights/x")).toBeNull();
+    expect(parsePostPath("/en/insights/X_Y")).toBeNull();
   });
 });

@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import sitemap from "./sitemap";
 
 describe("sitemap", () => {
-  it("lists all 8 localised URLs", () => {
+  it("lists all 10 localised URLs", () => {
     const urls = sitemap().map((e) => e.url);
     expect(urls).toContain("https://cefabmanagement.com/en");
     expect(urls).toContain("https://cefabmanagement.com/nl");
@@ -12,6 +12,8 @@ describe("sitemap", () => {
     expect(urls).toContain("https://cefabmanagement.com/nl/contact");
     expect(urls).toContain("https://cefabmanagement.com/en/faq");
     expect(urls).toContain("https://cefabmanagement.com/nl/faq");
-    expect(urls).toHaveLength(8);
+    expect(urls).toContain("https://cefabmanagement.com/en/insights");
+    expect(urls).toContain("https://cefabmanagement.com/nl/insights");
+    expect(urls).toHaveLength(10);
   });
 });

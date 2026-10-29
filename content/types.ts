@@ -1,5 +1,5 @@
 export interface Dictionary {
-  nav: { home: string; about: string; contact: string; faq: string };
+  nav: { home: string; about: string; contact: string; faq: string; insights: string };
   hero: { badge: string; title: string; lead: string; cta: string; cta2: string };
   problems: { title: string; subtitle: string; items: string[] }; // 12
   why: { title: string; subtitle: string; cards: { title: string; body: string }[] }; // 4
@@ -36,5 +36,15 @@ export interface Dictionary {
     about: { title: string; description: string };
     contact: { title: string; description: string };
     faq: { title: string; description: string };
+    insights: { title: string; description: string };
+  };
+  insights: {
+    title: string; intro: string; read: string; minRead: string;
+    breadcrumb: string; subscribed: string;
+    panel: { workTitle: string; workBody: string; workCta: string };
+    newsletter: {
+      title: string; body: string; placeholder: string; submit: string;
+      sending: string; success: string; error: string; note: string;
+    };
   };
 }
