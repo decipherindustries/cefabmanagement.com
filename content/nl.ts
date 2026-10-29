@@ -18,7 +18,7 @@ export const nl: Dictionary = {
   problems: {
     title: "Herken je dit?",
     subtitle:
-      "Je bedrijf groeit, maar je merkt dat je financiële en operationele systemen niet meer meeschalen",
+      "De omzet groeit en het bedrijf werkt. De systemen erachter niet: dashboards die verwarren in plaats van verhelderen, processen die met Excel en ducttape aan elkaar hangen, beslissingen op gevoel.",
     items: [
       "De cijfers kloppen, maar helpen niet bij beslissingen",
       "Je weet hoeveel omzet je draait, maar niet hoeveel winst je maakt op deal-niveau",
@@ -202,7 +202,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Hoe werkt dit contractueel?",
-        a: "Fractional: wederzijds opzegbaar retainer contract (ovv). Project-based: vast bedrag, duidelijke scope, deliverables & timeline. Geen gedoe met payroll - ik factureer via mijn BV.",
+        a: "Fractional: wederzijds opzegbaar retainer contract. Project-based: vast bedrag, duidelijke scope, deliverables & timeline. Geen gedoe met payroll - ik factureer via mijn BV.",
       },
       {
         q: "Ben je ook beschikbaar als interim of permanent CFO/COO?",
@@ -258,7 +258,7 @@ export const nl: Dictionary = {
   connect: {
     title: "Laten we kennismaken",
     subtitle:
-      "Wil je weten of we een goede match zijn? Plan een vrijblijvend gesprek of stuur een bericht.",
+      "Voor founders die willen opschalen zonder de grip te verliezen. Plan een vrijblijvend gesprek of stuur een bericht.",
     cta: "Plan een gesprek",
   },
   meta: {

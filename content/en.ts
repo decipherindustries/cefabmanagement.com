@@ -18,7 +18,7 @@ export const en: Dictionary = {
   problems: {
     title: "Sound familiar?",
     subtitle:
-      "Your business is growing, but you're noticing your financial and operational systems aren't scaling anymore",
+      "Revenue is growing and the business works. The systems behind it don't: dashboards that confuse instead of clarify, processes held together with Excel and duct tape, decisions made on gut feel.",
     items: [
       "The numbers are right, but they don't help with decisions",
       "You know your revenue, but not your profit at deal level",
@@ -257,7 +257,7 @@ export const en: Dictionary = {
   connect: {
     title: "Let's connect",
     subtitle:
-      "Want to know if we're a good match? Schedule a no-obligation call or send a message.",
+      "For founders who want to scale without losing their grip. Schedule a no-obligation call or send a message.",
     cta: "Schedule a call",
   },
   meta: {
