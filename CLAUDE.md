@@ -49,8 +49,7 @@ Project rules for this codebase. Read alongside the README.
   (also the GitHub default branch) - no feature-branch / `development` flow here.
   This overrides the global git-flow branching convention.
 - **Deploy:** push to `main` deploys production on Vercel project
-  `cefabmanagement-com-2346` (owns cefabmanagement.com and www). The second project
-  `cefabmanagement-com` is unused (to-do: delete). See README "Deploying".
+  `cefabmanagement-com-2346` (owns cefabmanagement.com and www). See README "Deploying".
 
 ## Before shipping
 

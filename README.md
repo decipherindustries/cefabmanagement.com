@@ -149,7 +149,7 @@ there is no CV. Browsers are unaffected (they still get HTML).
 The `proxy` runs on Vercel's edge automatically - no extra configuration needed.
 
 - The live Vercel project is `cefabmanagement-com-2346` (owns cefabmanagement.com and
-  www). A second project, `cefabmanagement-com`, is unused but also builds every push.
+  www). It is the only Vercel project for this repo.
 - Push to `main` deploys production.
 - Env vars live in Vercel. Inspect with `vercel env ls --project cefabmanagement-com-2346`
   (CLI logged in, team scope `fabian-tollenaar-s-projects`).
@@ -180,7 +180,6 @@ Until the IDs are set, the sign-up returns a generic error and logs
 ## Owner to-dos (later)
 
 - Write a privacy statement page, then link it from the newsletter sign-up and the footer.
-- Delete the unused Vercel project `cefabmanagement-com`.
 - Replace the portrait with a higher-res original when available
   (`public/portrait-catherine.png`).
 - Swap "Schedule a call" to a real booking URL if desired (currently links to Contact).
