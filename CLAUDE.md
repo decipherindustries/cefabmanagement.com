@@ -58,3 +58,21 @@ All of these must pass:
 ```bash
 npm run test && npm run lint && npx tsc --noEmit && npm run build
 ```
+
+## Open items (next session, as of 2026-10-30)
+
+1. **Privacy statement** (priority - the newsletter collects emails): NL + EN page, linked
+   from `NewsletterSignup` and the footer. Also in README "Owner to-dos".
+2. **YachtEye logo** in `components/sections/LogoStrip.tsx`: not in Catherine's CV. Ask
+   Fabian whether to keep it.
+3. **Testimonial** (`about.testimonial`, now attributed to Merijn de Waard): confirm Merijn
+   agreed to be named.
+4. **Review leftovers (optional):** OG image doesn't scale long titles
+   (`app/[locale]/insights/[slug]/opengraph-image.tsx`); breadcrumb `aria-label` is English
+   on `/nl` posts; `BlogPosting` publisher has no logo.
+5. **CI (Fabian's call):** no GitHub Actions yet. Suggest gitleaks/trufflehog,
+   commitlint and a test workflow.
+6. **Before wider promotion:** suggest `/code-review` or `/security-review` (Fabian runs it).
+
+Outside the repo: LinkedIn post for the first article (Catherine to review, schedule Tue
+3 Nov ~08:30 CET) and her comment on the CFO/COO post.
