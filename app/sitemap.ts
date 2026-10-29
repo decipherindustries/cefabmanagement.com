@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { LOCALES, PAGE_KEYS, href } from "@/lib/routes";
-import { absolute } from "@/lib/seo";
+import { absolute, postCanonical } from "@/lib/seo";
+import { getAllPosts } from "@/lib/insights";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -13,6 +14,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         alternates: { languages: Object.fromEntries(LOCALES.map((l) => [l, absolute(href(pageKey, l))])) },
       });
     }
+  }
+  for (const post of getAllPosts()) {
+    entries.push({
+      url: postCanonical(post.slug),
+      lastModified: post.updated ?? post.date,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
   }
   return entries;
 }

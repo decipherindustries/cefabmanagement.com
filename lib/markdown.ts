@@ -4,7 +4,8 @@
 import { getDictionary } from "@/content";
 import { SITE } from "@/lib/site";
 import { SITE_URL } from "@/lib/seo";
-import { href, type Locale, type PageKey } from "@/lib/routes";
+import { href, postHref, type Locale, type PageKey } from "@/lib/routes";
+import { formatPostDate, getAllPosts, getPost } from "@/lib/insights";
 
 const OBFUSCATED_EMAIL = "catherine [at] cefabmanagement [dot] com";
 const LINKEDIN = SITE.linkedin;
@@ -19,8 +20,10 @@ function abs(pageKey: PageKey, locale: Locale): string {
 
 /** Small header block shared by every markdown page. */
 function header(pageKey: PageKey, locale: Locale): string {
-  const htmlUrl = abs(pageKey, locale);
-  const otherUrl = abs(pageKey, otherLocale(locale));
+  return headerFor(abs(pageKey, locale), abs(pageKey, otherLocale(locale)), locale);
+}
+
+function headerFor(htmlUrl: string, otherUrl: string, locale: Locale): string {
   return [
     `<!-- Markdown version for AI agents. Human version: ${htmlUrl} -->`,
     `> Markdown rendering of **${SITE.name} · CFO/COO** - ${locale.toUpperCase()}. Human page: ${htmlUrl}. Other language: ${otherUrl}.`,
@@ -203,6 +206,34 @@ function renderInsights(locale: Locale): string {
   out.push(`# ${d.insights.title}`);
   out.push("");
   out.push(d.insights.intro);
+  out.push("");
+
+  for (const post of getAllPosts()) {
+    out.push(`- [${post.title}](${SITE_URL}${postHref(post.slug, locale)}.md) - ${formatPostDate(post.date, locale)}`);
+    out.push(`  ${post.summary}`);
+  }
+
+  return finalize(out);
+}
+
+export function renderPostMarkdown(slug: string, locale: Locale): string | null {
+  const post = getPost(slug);
+  if (!post) return null;
+  const out: string[] = [];
+
+  out.push(
+    headerFor(
+      `${SITE_URL}${postHref(slug, locale)}`,
+      `${SITE_URL}${postHref(slug, otherLocale(locale))}`,
+      locale,
+    ),
+  );
+  out.push("");
+  out.push(`# ${post.title}`);
+  out.push("");
+  out.push(`*${post.author}, ${formatPostDate(post.date, locale)}*`);
+  out.push("");
+  out.push(post.markdown);
 
   return finalize(out);
 }

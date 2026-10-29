@@ -15,6 +15,11 @@ describe("markdown-routing", () => {
     expect(mdInternalPathForPublic("/nl/about")).toBeNull(); // English slug under nl is not a public page
     expect(mdInternalPathForPublic("/")).toBeNull();
   });
+  it("maps post paths to internal /m paths", () => {
+    expect(mdInternalPathForPublic("/en/insights/abc")).toBe("/m/en/insights/abc");
+    expect(mdInternalPathForPublic("/en/insights")).toBe("/m/en/insights");
+    expect(mdInternalPathForPublic("/en/insights/a/b")).toBeNull();
+  });
   it("strips .md suffix", () => {
     expect(stripMdSuffix("/en/about.md")).toBe("/en/about");
     expect(stripMdSuffix("/nl/over-mij.md")).toBe("/nl/over-mij");

@@ -1,4 +1,5 @@
-import { LOCALES, PAGE_KEYS, href } from "@/lib/routes";
+import { LOCALES, PAGE_KEYS, href, postHref } from "@/lib/routes";
+import { getAllPosts } from "@/lib/insights";
 import { SITE } from "@/lib/site";
 import { SITE_URL } from "@/lib/seo";
 
@@ -17,6 +18,10 @@ export function GET() {
       const url = `${SITE_URL}${href(pageKey, locale)}`;
       lines.push(`- [${pageKey} (${locale})](${url}.md)`);
     }
+  }
+  lines.push("", "## Insights");
+  for (const post of getAllPosts()) {
+    lines.push(`- [${post.title}](${SITE_URL}${postHref(post.slug, "en")}.md)`);
   }
   lines.push("");
   return new Response(lines.join("\n"), {

@@ -1,4 +1,4 @@
-import { resolvePublicPath } from "@/lib/routes";
+import { parsePostPath, resolvePublicPath } from "@/lib/routes";
 
 /** True if the Accept header requests markdown (case-insensitive). */
 export function wantsMarkdown(accept: string): boolean {
@@ -10,7 +10,7 @@ export function wantsMarkdown(accept: string): boolean {
  * markdown route ("/m" + pathname), or null if it is not a known public page.
  */
 export function mdInternalPathForPublic(pathname: string): string | null {
-  if (!resolvePublicPath(pathname)) return null;
+  if (!resolvePublicPath(pathname) && !parsePostPath(pathname)) return null;
   return "/m" + pathname;
 }
 
