@@ -45,7 +45,7 @@ export const nl: Dictionary = {
       },
       {
         title: "Pragmatisch, niet academisch",
-        body: "We tornen niet aan wat werkt. Focus op quick wins én de lange termijn - en ik zet AI en automatisering in om het monnikenwerk te slopen, niet om met buzzwords te strooien. Geen frameworks om het framework, gewoon doen wat nodig is met heldere outcomes.",
+        body: "Ik torn niet aan wat werkt. Focus op quick wins én de lange termijn - en ik zet AI en automatisering in om het monnikenwerk te slopen, niet om met buzzwords te strooien. Geen frameworks om het framework, gewoon doen wat nodig is met heldere outcomes.",
       },
       {
         title: "Bewezen track-record",
@@ -166,7 +166,7 @@ export const nl: Dictionary = {
       },
       {
         q: "Wat gebeurt er als we meer (of minder) capaciteit nodig hebben?",
-        a: "We evalueren elke 3-6 maanden of de tier nog past. Opschalen of afschalen kan met 1 maand opzegtermijn. Bij tijdelijke pieken (bijv. funding round) kunnen we ook project-based support toevoegen bovenop je retainer.",
+        a: "We evalueren elke 3-6 maanden of de tier nog past. Opschalen of afschalen kan met 1 maand opzegtermijn. Bij tijdelijke pieken (bijv. funding round) kan ik ook project-based support toevoegen bovenop je retainer.",
       },
       {
         q: "Met welke systemen/tools werk je?",
@@ -246,7 +246,7 @@ export const nl: Dictionary = {
     send: "Verstuur",
     success: "Bedankt voor je bericht! Ik neem snel contact met je op.",
     sending: "Versturen…",
-    error: "Er ging iets mis. Probeer het opnieuw of mail ons direct.",
+    error: "Er ging iets mis. Probeer het opnieuw of mail me direct.",
   },
   footer: {
     tagline:
@@ -270,7 +270,7 @@ export const nl: Dictionary = {
     about: {
       title: "Over Catherine Cruickshank · CFO/COO",
       description:
-        "10+ jaar finance en operations bouwen in scale-ups - M&A, funding rounds en exits tot €80M. Maak kennis met de operator achter CEFAB Management.",
+        "10+ jaar finance en operations bouwen in scale-ups - M&A, funding rounds en exits tot €80M. Fractional CFO/COO voor founders en boards.",
     },
     contact: {
       title: "Contact · Catherine Cruickshank CFO/COO",

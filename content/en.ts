@@ -45,7 +45,7 @@ export const en: Dictionary = {
       },
       {
         title: "Pragmatic, not academic",
-        body: "We don't touch what works. Focus on quick wins and the long term - and I lean on AI and automation to kill the busywork, not to chase buzzwords. No frameworks for frameworks, just what's needed with clear outcomes.",
+        body: "I don't change what works. Focus on quick wins and the long term - and I lean on AI and automation to kill the busywork, not to chase buzzwords. No frameworks for frameworks, just what's needed with clear outcomes.",
       },
       {
         title: "Proven track record",
@@ -92,8 +92,8 @@ export const en: Dictionary = {
     intro:
       "The packages map to where your company is right now - not to a fixed menu. Most partnerships start at Foundation to get the basics solid, then grow into Growth and Strategic as the business (and what it needs from a CFO/COO) scales. You're never locked in: we review the fit every quarter and move up or down as needed.",
     subtitlePrefix: "",
-    subtitleLink: "Contact",
-    subtitleSuffix: " us for more information",
+    subtitleLink: "Get in touch",
+    subtitleSuffix: " for more information",
     tiers: [
       {
         name: "Foundation",
@@ -166,7 +166,7 @@ export const en: Dictionary = {
       },
       {
         q: "What happens if we need more (or less) capacity?",
-        a: "We evaluate every 3-6 months if the tier still fits. Scaling up or down can be done with a 1-month notice period. For temporary spikes (e.g., funding round), we can also add project-based support on top of your retainer.",
+        a: "We evaluate every 3-6 months if the tier still fits. Scaling up or down can be done with a 1-month notice period. For temporary spikes (e.g., funding round), I can also add project-based support on top of your retainer.",
       },
       {
         q: "Which systems/tools do you work with?",
@@ -246,7 +246,7 @@ export const en: Dictionary = {
     send: "Send",
     success: "Thank you for your message! I'll get back to you soon.",
     sending: "Sending…",
-    error: "Something went wrong. Please try again, or email us directly.",
+    error: "Something went wrong. Please try again, or email me directly.",
   },
   footer: {
     tagline: "Fractional CFO/COO for scale-ups ready for the next phase",
@@ -269,7 +269,7 @@ export const en: Dictionary = {
     about: {
       title: "About Catherine Cruickshank · CFO/COO",
       description:
-        "10+ years building finance and operations in scale-ups - M&A, funding rounds and exits up to €80M. Meet the operator behind CEFAB Management.",
+        "10+ years building finance and operations in scale-ups - M&A, funding rounds and exits up to €80M. Fractional CFO/COO for founders and boards.",
     },
     contact: {
       title: "Contact · Catherine Cruickshank CFO/COO",
