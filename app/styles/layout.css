@@ -40,6 +40,8 @@
   .ck-hero__lead { font-size: var(--text-lead); line-height: var(--lh-snug);
     color: var(--on-dark-body); margin: 0; max-width: 46ch; }
   .ck-hero__cta { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 4px; }
+  /* Capped so the 895px-wide source stays sharp on 2x screens (420 x 2 = 840). */
+  .ck-hero__media { width: 100%; max-width: 420px; justify-self: end; }
   .ck-hero__media img { width: 100%; height: auto; border-radius: var(--radius-xl);
     box-shadow: 0 30px 70px rgba(0,0,0,.4); display: block; }
 
