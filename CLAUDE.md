@@ -8,8 +8,12 @@ Project rules for this codebase. Read alongside the README.
 - **Statically generated**: every page is SSG via `generateStaticParams`. No SSR, no
   runtime data fetching.
 - **No Supabase, ever.** If you see a Supabase reference, it's a mistake.
-- Contact form is **front-end only**. The single backend seam is `submitContact()` in
-  `components/contact/ContactForm.tsx`.
+- Pages are static, but there are two **server routes**: `/api/contact` and
+  `/api/newsletter`. Both use reCAPTCHA v3 (`lib/recaptcha.ts`) plus a honeypot, and
+  send through Brevo (`lib/brevo.ts`). Contact mail and newsletter notifications go to
+  `directie@cefabmanagement.com` by default (`CONTACT_TO_ADDRESS` /
+  `NEWSLETTER_NOTIFY_ADDRESS` override). Newsletter is Brevo double opt-in; env vars in
+  README.
 
 ## Where things live
 
@@ -22,6 +26,10 @@ Project rules for this codebase. Read alongside the README.
 - **Brand / contact constants** → `lib/site.ts`.
 - **Routing** → `lib/routes.ts` (slug map + URL helpers); decision logic in
   `lib/middleware-logic.ts`; edge entry in `proxy.ts` (Next 16's renamed middleware).
+- **Insights posts** → `content/insights/<slug>.md`; loader `lib/insights.ts`. Frontmatter:
+  `title`, `description` (max 160), `summary`, `date`, `author`, `lang`, optional
+  `updated`, `draft`. Slug = filename. Canonical is always the `/en` URL. To publish: add
+  the file, run the gate, commit, push to `main`.
 - **SEO** → `lib/seo.ts` (alternates + JSON-LD).
 
 ## Conventions
@@ -40,6 +48,9 @@ Project rules for this codebase. Read alongside the README.
 - **Work directly on `main`.** This project commits and pushes straight to `main`
   (also the GitHub default branch) - no feature-branch / `development` flow here.
   This overrides the global git-flow branching convention.
+- **Deploy:** push to `main` deploys production on Vercel project
+  `cefabmanagement-com-2346` (owns cefabmanagement.com and www). The second project
+  `cefabmanagement-com` is unused (to-do: delete). See README "Deploying".
 
 ## Before shipping
 

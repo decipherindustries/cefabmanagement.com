@@ -139,16 +139,49 @@ there is no CV. Browsers are unaffected (they still get HTML).
    - `NEXT_PUBLIC_GA_ID` - optional GA override (a default is baked in).
    - **Contact form:** `BREVO_API_KEY`, `BREVO_FROM_NAME`, `BREVO_FROM_ADDRESS`,
      `CONTACT_TO_ADDRESS`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `RECAPTCHA_SECRET_KEY`,
-     `RECAPTCHA_MIN_SCORE` (optional).
+     `RECAPTCHA_MIN_SCORE` (optional). `CONTACT_TO_ADDRESS` defaults to
+     `directie@cefabmanagement.com`.
+   - **Newsletter:** `BREVO_NEWSLETTER_LIST_ID`, `BREVO_DOI_TEMPLATE_ID`,
+     `NEWSLETTER_NOTIFY_ADDRESS` (optional, defaults to `directie@cefabmanagement.com`).
 4. Set the **production branch to `main`** (Settings → Git → Production Branch). Every
    push to it then deploys automatically.
 
 The `proxy` runs on Vercel's edge automatically - no extra configuration needed.
 
+- The live Vercel project is `cefabmanagement-com-2346` (owns cefabmanagement.com and
+  www). A second project, `cefabmanagement-com`, is unused but also builds every push.
+- Push to `main` deploys production.
+- Env vars live in Vercel. Inspect with `vercel env ls --project cefabmanagement-com-2346`
+  (CLI logged in, team scope `fabian-tollenaar-s-projects`).
+
+## Insights and newsletter
+
+Posts are Markdown files in `content/insights/<slug>.md` (see CLAUDE.md for frontmatter).
+Publish = add the file, run the ship gate, commit, push to `main`.
+
+The sign-up form posts to `app/api/newsletter/route.ts` (reCAPTCHA v3 + honeypot, then a
+Brevo double opt-in request via `lib/brevo.ts`).
+
+### Brevo newsletter setup
+
+1. Create a contact list "Insights newsletter" and note its ID.
+2. Create a text contact attribute `LOCALE`.
+3. Create a confirmation (double opt-in) template containing the `{{ doubleoptin }}` link,
+   tag `optin`, sender `noreply@cefabmanagement.com`. Activate it and note its ID.
+4. Set `BREVO_NEWSLETTER_LIST_ID` and `BREVO_DOI_TEMPLATE_ID` in Vercel, then redeploy.
+5. Check the API key has contacts permission and that Brevo "authorised IPs" does not
+   block Vercel.
+
+Until the IDs are set, the sign-up returns a generic error and logs
+`[newsletter] sign-up failed`.
+
 ## Owner to-dos (later)
 
 - Configure Brevo (verify domain + API key) and reCAPTCHA (register site) in Vercel to
   make the contact form send - see "Contact form" above.
+- Write a privacy statement page, then link it from the newsletter sign-up and the footer.
+- Delete the unused Vercel project `cefabmanagement-com`.
+- Create the Brevo list and confirmation template - see "Brevo newsletter setup" above.
 - Replace the portrait with a higher-res original when available
   (`public/portrait-catherine.png`).
 - Swap "Schedule a call" to a real booking URL if desired (currently links to Contact).
